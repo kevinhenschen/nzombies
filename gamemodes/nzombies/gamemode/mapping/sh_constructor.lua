@@ -1,4 +1,4 @@
--- Setup round module
+﻿-- Setup round module
 nzMapping = nzMapping or AddNZModule("Mapping")
 
 -- Variables

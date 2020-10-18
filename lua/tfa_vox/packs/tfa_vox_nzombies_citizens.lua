@@ -1,4 +1,4 @@
-TFAVOX_Models = TFAVOX_Models or {}
+﻿TFAVOX_Models = TFAVOX_Models or {}
 
 --[[CONVENIENCE FUNCTIONS, DO NOT EDIT FROM THIS POINT UNTIL CLEAR ]]--
 

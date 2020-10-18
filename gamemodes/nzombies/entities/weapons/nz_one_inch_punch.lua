@@ -1,4 +1,4 @@
-SWEP.Base = "weapon_fists"
+﻿SWEP.Base = "weapon_fists"
 
 if SERVER then
 	AddCSLuaFile("nz_one_inch_punch.lua")

@@ -1,4 +1,4 @@
-local defaultdata = {
+﻿local defaultdata = {
 	DownTime = true,
 	ReviveTime = true,
 	RevivePlayer = true,

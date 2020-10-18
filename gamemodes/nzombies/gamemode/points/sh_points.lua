@@ -1,4 +1,4 @@
-local _PLAYER = FindMetaTable("Player")
+﻿local _PLAYER = FindMetaTable("Player")
 
 function _PLAYER:GetPoints()
 	return self:GetNWInt("points") or 0
@@ -47,7 +47,7 @@ if (SERVER) then
 		self:SetPoints(self:GetPoints() - amount)
 		
 		if !nosound then
-			self:EmitSound("nz/effects/buy.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.EFFECTS.BUY)
 		end
 
 		-- If you have a clone like this, it tracks money spent which will be refunded on revival

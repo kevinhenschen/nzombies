@@ -1,4 +1,4 @@
---
+﻿--
 
 function nzRandomBox.Spawn(exclude, first)
 	--Get all spawns

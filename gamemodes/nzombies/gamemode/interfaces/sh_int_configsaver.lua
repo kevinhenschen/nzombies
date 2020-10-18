@@ -1,4 +1,4 @@
--- 
+﻿-- 
 
 if SERVER then
 	util.AddNetworkString("nz_SaveConfig")

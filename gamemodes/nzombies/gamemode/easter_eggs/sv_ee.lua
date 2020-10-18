@@ -1,4 +1,4 @@
-//
+﻿//
 
 function nzEE:Reset()
 	-- Reset the counter of eggs

@@ -1,4 +1,4 @@
-function nzPerks:UpdateQuickRevive()
+﻿function nzPerks:UpdateQuickRevive()
 	if #player.GetAllPlaying() <= 1 then
 		for k,v in pairs(ents.FindByClass("perk_machine")) do
 			if v:GetPerkID() == "revive" then

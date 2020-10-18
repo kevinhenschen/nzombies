@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	function nzRound:SetNextSpecialRound( num )
 		self.NextSpecialRound = num
 	end

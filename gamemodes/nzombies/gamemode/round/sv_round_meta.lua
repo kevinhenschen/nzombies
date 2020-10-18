@@ -1,4 +1,4 @@
---pool network strings
+﻿--pool network strings
 util.AddNetworkString( ", nzRoundNumber" )
 util.AddNetworkString( ", nzRoundState" )
 util.AddNetworkString( ", nzRoundSpecial" )

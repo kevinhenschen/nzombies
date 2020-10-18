@@ -1,4 +1,4 @@
-if !MODULE then TFAVOX_Modules_Initialize() return end
+﻿if !MODULE then TFAVOX_Modules_Initialize() return end
 
 MODULE.name = "nZombies - Perks, Box, Facilities etc."
 MODULE.description = "Plays sounds based on nZombies events"

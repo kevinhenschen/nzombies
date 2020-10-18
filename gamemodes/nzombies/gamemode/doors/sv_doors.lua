@@ -1,4 +1,4 @@
-function nzDoors:DoorToEntIndex(num)
+﻿function nzDoors:DoorToEntIndex(num)
 	local ent = ents.GetMapCreatedEntity(num)
 
 	return IsValid(ent) and ent:EntIndex() or nil

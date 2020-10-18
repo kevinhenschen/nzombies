@@ -1,4 +1,4 @@
---Get the meta Table
+﻿--Get the meta Table
 local plyMeta = FindMetaTable( "Player" )
 --accessors
 AccessorFunc( plyMeta, "iSpectatingID", "SpectatingID", FORCE_NUMBER )

@@ -1,4 +1,4 @@
-nzTools:CreateTool("wallbuy", {
+﻿nzTools:CreateTool("wallbuy", {
 	displayname = "Weapon Buy Placer",
 	desc = "LMB: Place Weapon Buy, RMB: Remove Weapon Buy, R: Rotate, C: Change Properties",
 	condition = function(wep, ply)

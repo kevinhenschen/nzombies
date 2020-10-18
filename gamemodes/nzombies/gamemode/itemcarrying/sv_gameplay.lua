@@ -1,4 +1,4 @@
-
+﻿
 function nzItemCarry.OnPlayerPickItemUp( ply, ent )
 	-- Downed players can't pick up anything!
 	if !ply:GetNotDowned() then return false end

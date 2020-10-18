@@ -1,4 +1,4 @@
-
+﻿
 if SERVER then
 
 	-- Scroll down to the functions you can use
@@ -349,9 +349,9 @@ if CLIENT then
 		
 		if easteregg then
 			if win then
-				surface.PlaySound(GetGlobalString("winmusic", "nz/easteregg/motd_standard.wav"))
+				surface.PlaySound(GetGlobalString("winmusic", NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_STANDARD))
 			else
-				surface.PlaySound(GetGlobalString("losemusic", "nz/round/game_over_4.mp3"))
+				surface.PlaySound(GetGlobalString("losemusic", NZOMBIES_VARS.SOUND.NZ.ROUND.GAME_OVER_4))
 			end
 		end
 	end

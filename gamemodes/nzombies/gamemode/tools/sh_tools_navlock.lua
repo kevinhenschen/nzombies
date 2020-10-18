@@ -1,4 +1,4 @@
-nzTools:CreateTool("navlock", {
+﻿nzTools:CreateTool("navlock", {
 	displayname = "Nav Locker Tool",
 	desc = "LMB: Connect doors and navmeshes, RMB: Lock/Unlock navmeshes",
 	condition = function(wep, ply)

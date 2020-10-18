@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 -- Interface for stuff taht cna be activated by the player DO NOT USE THIS CLASS create subclasses!
 

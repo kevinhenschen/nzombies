@@ -1,4 +1,4 @@
-function GM:OnZombieKilled(zombie, dmgInfo)
+﻿function GM:OnZombieKilled(zombie, dmgInfo)
 	local attacker = dmgInfo:GetAttacker()
 	if IsValid(attacker) and attacker:IsPlayer() then
 		attacker:IncrementTotalKills()

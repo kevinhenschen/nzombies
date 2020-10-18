@@ -1,4 +1,4 @@
-function GM:ContextMenuOpen()
+﻿function GM:ContextMenuOpen()
 	return nzRound:InState( ROUND_CREATE ) and LocalPlayer():IsAdmin()
 end
 

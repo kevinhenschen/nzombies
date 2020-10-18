@@ -1,4 +1,4 @@
-
+﻿
 AddCSLuaFile( "shared.lua" )
 
 SWEP.Author			= "Zet0r"
@@ -89,7 +89,7 @@ function SWEP:Deploy()
 	timer.Simple(0.5,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/open.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.OPEN)
 				self.Owner:ViewPunch( Angle( -1, -1, 0 ) )
 			end
 		end
@@ -98,7 +98,7 @@ function SWEP:Deploy()
 	timer.Simple(1.3,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/drink.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.DRINK)
 				self.Owner:ViewPunch( Angle( -3, 0, 0 ) )
 			end
 		end
@@ -107,7 +107,7 @@ function SWEP:Deploy()
 	timer.Simple(2.3,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/smash.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.SMASH)
 				net.Start("perk_blur_screen")
 				net.Send(self.Owner)
 			end
@@ -117,7 +117,7 @@ function SWEP:Deploy()
 	timer.Simple(3,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/burp.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.BURP)
 			end
 		end
 	end)

@@ -1,4 +1,4 @@
-ENT.Type = "anim"
+﻿ENT.Type = "anim"
 ENT.Base = "base_entity"
 ENT.PrintName = "Monkey Bomb"
 ENT.Author = "Zet0r"
@@ -7,18 +7,18 @@ ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
 ENT.ExplosionSounds = {
-	"nz/monkey/voice_explosion/explo_vox_00.wav",
-	"nz/monkey/voice_explosion/explo_vox_01.wav",
-	"nz/monkey/voice_explosion/explo_vox_02.wav",
-	"nz/monkey/voice_explosion/explo_vox_03.wav",
-	"nz/monkey/voice_explosion/explo_vox_04.wav",
-	"nz/monkey/voice_explosion/explo_vox_05.wav",
-	"nz/monkey/voice_explosion/explo_vox_06.wav",
-	"nz/monkey/voice_explosion/explo_vox_07.wav",
-	"nz/monkey/voice_explosion/explo_vox_08.wav",
-	"nz/monkey/voice_explosion/explo_vox_09.wav",
-	"nz/monkey/voice_explosion/explo_vox_10.wav",
-	"nz/monkey/voice_explosion/explo_vox_11.wav",
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_00,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_01,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_02,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_03,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_04,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_05,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_06,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_07,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_08,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_09,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_10,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_EXPLOSION.EXPLO_VOX_11,
 }
 
 if SERVER then
@@ -110,7 +110,7 @@ end
 function ENT:Think()
 	if SERVER then
 		if self.NextCymbal and self.NextCymbal < CurTime() then
-			self:EmitSound("nz/monkey/cymbals/monk_cymb_m.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.MONKEY.CYMBALS.MONK_CYMB_M)
 			self.NextCymbal = CurTime() + 0.2
 		end
 	end

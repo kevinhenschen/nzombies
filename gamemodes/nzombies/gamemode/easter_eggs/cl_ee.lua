@@ -1,4 +1,4 @@
-if not ConVarExists("nz_eastereggsongs") then CreateClientConVar("nz_eastereggsongs", "1") end
+﻿if not ConVarExists("nz_eastereggsongs") then CreateClientConVar("nz_eastereggsongs", "1") end
 
 cvars.AddChangeCallback("nz_eastereggsongs", function( convar_name, value_old, value_new )
 	local old, new = tobool(value_old), tobool(value_new)

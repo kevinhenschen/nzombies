@@ -1,4 +1,4 @@
-function nzRound:GetEndTime()
+﻿function nzRound:GetEndTime()
 	return GetGlobalFloat( "gwEndTime", 0 )
 end
 
@@ -37,6 +37,6 @@ end
 net.Receive("nz_hellhoundround", function()
 	if net.ReadBool() then
 		hook.Call( "OnSpecialRoundStart" )
-		surface.PlaySound("nz/round/dog_start.wav")
+		surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.DOG_START)
 	end
 end)

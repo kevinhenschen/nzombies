@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzNotifications = nzNotifications or AddNZModule("Notifications")
 nzNotifications.Data = {}
 

@@ -1,4 +1,4 @@
-SWEP.PrintName			= "Create Mode Toolgun"
+﻿SWEP.PrintName			= "Create Mode Toolgun"
 SWEP.Author				= "Zet0r"
 SWEP.Contact			= ""
 SWEP.Purpose			= ""

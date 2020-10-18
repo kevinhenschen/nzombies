@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 ENT.Base = "nz_zombiebase"
 ENT.PrintName = "Hellhound"
@@ -25,35 +25,35 @@ ENT.DeathSequences = {
 }
 
 ENT.AttackSounds = {
-	"nz/hellhound/attack/attack_00.wav",
-	"nz/hellhound/attack/attack_01.wav",
-	"nz/hellhound/attack/attack_02.wav",
-	"nz/hellhound/attack/attack_03.wav",
-	"nz/hellhound/attack/attack_04.wav",
-	"nz/hellhound/attack/attack_05.wav",
-	"nz/hellhound/attack/attack_06.wav"
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_00,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_01,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_02,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_03,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_04,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_05,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.ATTACK.ATTACK_06
 }
 
 ENT.AttackHitSounds = {
-	"nz/hellhound/bite/bite_00.wav",
-	"nz/hellhound/bite/bite_01.wav",
-	"nz/hellhound/bite/bite_02.wav",
-	"nz/hellhound/bite/bite_03.wav",
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.BITE.BITE_00,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.BITE.BITE_01,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.BITE.BITE_02,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.BITE.BITE_03,
 }
 
 ENT.WalkSounds = {
-	"nz/hellhound/dist_vox_a/dist_vox_a_00.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_01.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_02.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_03.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_04.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_05.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_06.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_07.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_08.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_09.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_10.wav",
-	"nz/hellhound/dist_vox_a/dist_vox_a_11.wav"
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_00,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_01,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_02,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_03,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_04,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_05,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_06,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_07,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_08,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_09,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_10,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DIST_VOX_A.DIST_VOX_A_11
 }
 
 ENT.PainSounds = {
@@ -65,20 +65,20 @@ ENT.PainSounds = {
 }
 
 ENT.DeathSounds = {
-	"nz/hellhound/death2/death0.wav",
-	"nz/hellhound/death2/death1.wav",
-	"nz/hellhound/death2/death2.wav",
-	"nz/hellhound/death2/death3.wav",
-	"nz/hellhound/death2/death4.wav",
-	"nz/hellhound/death2/death5.wav",
-	"nz/hellhound/death2/death6.wav",
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH0,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH1,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH2,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH3,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH4,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH5,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.DEATH2.DEATH6,
 }
 
 ENT.SprintSounds = {
-	"nz/hellhound/close/close_00.wav",
-	"nz/hellhound/close/close_01.wav",
-	"nz/hellhound/close/close_02.wav",
-	"nz/hellhound/close/close_03.wav",
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.CLOSE.CLOSE_00,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.CLOSE.CLOSE_01,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.CLOSE.CLOSE_02,
+	NZOMBIES_VARS.SOUND.NZ.HELLHOUND.CLOSE.CLOSE_03,
 }
 
 ENT.JumpSequences = {seq = ACT_JUMP, speed = 30}

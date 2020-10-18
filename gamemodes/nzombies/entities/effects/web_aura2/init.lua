@@ -1,4 +1,4 @@
-
+﻿
 local stringdeathtime = 1
 local stringmat = Material( "trails/physbeam" )
 local stringspeed = 2

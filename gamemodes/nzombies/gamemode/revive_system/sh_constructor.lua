@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzRevive = nzRevive or AddNZModule("Revive")
 
 -- Variables

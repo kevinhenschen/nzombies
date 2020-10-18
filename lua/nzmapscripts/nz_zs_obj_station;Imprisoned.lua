@@ -1,4 +1,4 @@
-local mapscript = {}
+﻿local mapscript = {}
 
 local gens = {
 	{pos = Vector(475, -845, 213), ang = Angle(0,-105,90)},
@@ -335,7 +335,7 @@ end
 
 nzEE.Major:AddStep( function() -- Step 1, get to the key (fairly long step)
 	nzDoors:OpenLinkedDoors("ee_door")
-	nzNotifications:PlaySound("nz/easteregg/motd_round-01.wav", 0)
+	nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_ROUND_01, 0)
 	local ent
 	for k,v in pairs(ents.FindByName("door_key_5")) do
 		if IsValid(v) then
@@ -353,7 +353,7 @@ end)
 
 local forcefieldgens = {}
 nzEE.Major:AddStep( function() -- Step 2, Open control room gate (fairly long step too)
-	nzNotifications:PlaySound("nz/easteregg/motd_round-04.wav", 5)
+	nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_ROUND_04, 5)
 	nzNotifications:PlaySound("ambient/machines/thumper_startup1.wav", 2)
 	nzNotifications:PlaySound("ambient/machines/thumper_hit.wav", 0)
 	for k,v in pairs(forcefieldgens) do -- This enables the next step
@@ -411,7 +411,7 @@ nzEE.Major:AddStep( function() -- Step 5, You win :D
 		game.SetTimeScale(0.2)
 		nzRound:Freeze(true) -- Prevents switching and spawning
 	end)
-	nzEE.Cam:Music("nz/easteregg/motd_standard.wav")
+	nzEE.Cam:Music(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_STANDARD)
 	nzEE.Cam:QueueView(15, Vector(1623, -1257, 187), Vector(1623, -1382, 227), nil, true)
 	nzEE.Cam:Text("You blew up the core after "..roundwegotto.." rounds!")
 	nzEE.Cam:Function( function()

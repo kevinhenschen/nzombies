@@ -1,1 +1,1 @@
-nzEffects = nzEffects or AddNZModule("Effects")
+﻿nzEffects = nzEffects or AddNZModule("Effects")

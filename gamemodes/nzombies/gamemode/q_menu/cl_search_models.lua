@@ -1,4 +1,4 @@
-
+﻿
 -- A copy paste of the sandbox one, but only for models
 
 local HasCreated = HasCreated or false

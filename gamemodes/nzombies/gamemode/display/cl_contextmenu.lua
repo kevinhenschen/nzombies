@@ -1,4 +1,4 @@
-
+﻿
 local PANEL = {}
 
 AccessorFunc( PANEL, "m_bHangOpen", "HangOpen" )

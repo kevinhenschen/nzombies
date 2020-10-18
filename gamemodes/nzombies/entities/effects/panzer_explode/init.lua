@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 EFFECT.Mat = {
 	Model("particle/particle_smokegrenade"),

@@ -1,8 +1,8 @@
--- 
+﻿-- 
 nzDisplay = nzDisplay or AddNZModule("Display")
 
-local bloodline_points = Material("bloodline_score2.png", "unlitgeneric smooth")
-local bloodline_gun = Material("cod_hud.png", "unlitgeneric smooth")
+local bloodline_points = Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE2, "unlitgeneric smooth")
+local bloodline_gun = Material(NZOMBIES_VARS.MATERIALS.COD_HUD, "unlitgeneric smooth")
 
 --[[local bloodDecals = {
 	Material("decals/blood1"),
@@ -263,22 +263,22 @@ end
 
 -- Now handled via perks individual icon table entries
 --[[local perk_icons = {
-	["jugg"] = Material("perk_icons/jugg.png", "smooth unlitgeneric"),
-	["speed"] = Material("perk_icons/speed.png", "smooth unlitgeneric"),
-	["dtap"] = Material("perk_icons/dtap.png", "smooth unlitgeneric"),
-	["revive"] = Material("perk_icons/revive.png", "smooth unlitgeneric"),
-	["dtap2"] = Material("perk_icons/dtap2.png", "smooth unlitgeneric"),
-	["staminup"] = Material("perk_icons/staminup.png", "smooth unlitgeneric"),
-	["phd"] = Material("perk_icons/phd.png", "smooth unlitgeneric"),
-	["deadshot"] = Material("perk_icons/deadshot.png", "smooth unlitgeneric"),
-	["mulekick"] = Material("perk_icons/mulekick.png", "smooth unlitgeneric"),
-	["cherry"] = Material("perk_icons/cherry.png", "smooth unlitgeneric"),
-	["tombstone"] = Material("perk_icons/tombstone.png", "smooth unlitgeneric"),
-	["whoswho"] = Material("perk_icons/whoswho.png", "smooth unlitgeneric"),
-	["vulture"] = Material("perk_icons/vulture.png", "smooth unlitgeneric"),
+	["jugg"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.JUGG, "smooth unlitgeneric"),
+	["speed"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.SPEED, "smooth unlitgeneric"),
+	["dtap"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.DTAP, "smooth unlitgeneric"),
+	["revive"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.REVIVE, "smooth unlitgeneric"),
+	["dtap2"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.DTAP2, "smooth unlitgeneric"),
+	["staminup"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.STAMINUP, "smooth unlitgeneric"),
+	["phd"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.PHD, "smooth unlitgeneric"),
+	["deadshot"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.DEADSHOT, "smooth unlitgeneric"),
+	["mulekick"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.MULEKICK, "smooth unlitgeneric"),
+	["cherry"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.CHERRY, "smooth unlitgeneric"),
+	["tombstone"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.TOMBSTONE, "smooth unlitgeneric"),
+	["whoswho"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.WHOSWHO, "smooth unlitgeneric"),
+	["vulture"] = Material(NZOMBIES_VARS.MATERIALS.PERK_ICONS.VULTURE, "smooth unlitgeneric"),
 
 	-- Only used to see PaP through walls with Vulture Aid
-	["pap"] = Material("vulture_icons/pap.png", "smooth unlitgeneric"),
+	["pap"] = Material(NZOMBIES_VARS.MATERIALS.VULTURE_ICONS.PAP, "smooth unlitgeneric"),
 }]]
 
 local function PerksHud()
@@ -293,9 +293,9 @@ local function PerksHud()
 end
 
 local vulture_textures = {
-	["wall_buys"] = Material("vulture_icons/wall_buys.png", "smooth unlitgeneric"),
-	["random_box"] = Material("vulture_icons/random_box.png", "smooth unlitgeneric"),
-	["wunderfizz_machine"] = Material("vulture_icons/wunderfizz.png", "smooth unlitgeneric"),
+	["wall_buys"] = Material(NZOMBIES_VARS.MATERIALS.VULTURE_ICONS.WALL_BUYS, "smooth unlitgeneric"),
+	["random_box"] = Material(NZOMBIES_VARS.MATERIALS.VULTURE_ICONS.RANDOM_BOX, "smooth unlitgeneric"),
+	["wunderfizz_machine"] = Material(NZOMBIES_VARS.MATERIALS.VULTURE_ICONS.WUNDERFIZZ, "smooth unlitgeneric"),
 }
 
 local function VultureVision()
@@ -328,7 +328,7 @@ end
 local round_white = 0
 local round_alpha = 255
 local round_num = 0
-local infmat = Material("materials/round_-1.png", "smooth")
+local infmat = Material(NZOMBIES_VARS.MATERIALS.ROUND__1, "smooth")
 local function RoundHud()
 
 	local text = ""
@@ -374,12 +374,12 @@ local function StartChangeRound()
 
 	if lastround >= 1 then
 		if prevroundspecial then
-			surface.PlaySound("nz/round/special_round_end.wav")
+			surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.SPECIAL_ROUND_END)
 		else
-			surface.PlaySound("nz/round/round_end.mp3")
+			surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND_END)
 		end
 	elseif lastround == -2 then
-		surface.PlaySound("nz/round/round_-1_prepare.mp3")
+		surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND__1_PREPARE)
 	else
 		round_num = 0
 	end
@@ -412,12 +412,12 @@ local function StartChangeRound()
 					round_num = nzRound:GetNumber()
 					round_charger = 0.5
 					if round_num == -1 then
-						--surface.PlaySound("nz/easteregg/motd_round-03.wav")
+						--surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_ROUND_03)
 					elseif nzRound:IsSpecial() then
-						surface.PlaySound("nz/round/special_round_start.wav")
+						surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.SPECIAL_ROUND_START)
 						prevroundspecial = true
 					else
-						surface.PlaySound("nz/round/round_start.mp3")
+						surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND_START)
 						prevroundspecial = false
 					end
 					haschanged = true
@@ -434,7 +434,7 @@ local function EndChangeRound()
 	roundchangeending = true
 end
 
-local grenade_icon = Material("grenade-256.png", "unlitgeneric smooth")
+local grenade_icon = Material(NZOMBIES_VARS.MATERIALS.GRENADE_256, "unlitgeneric smooth")
 local function DrawGrenadeHud()
 	local num = LocalPlayer():GetAmmoCount(GetNZAmmoID("grenade") or -1)
 	local numspecial = LocalPlayer():GetAmmoCount(GetNZAmmoID("specialgrenade") or -1)

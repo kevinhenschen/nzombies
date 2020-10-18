@@ -1,4 +1,4 @@
--- 
+﻿-- 
 
 function nzPlayers.PlayerNoClip( ply, desiredState )
 	if ply:Alive() and nzRound:InState( ROUND_CREATE ) then

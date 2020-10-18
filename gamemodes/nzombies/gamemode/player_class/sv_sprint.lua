@@ -1,4 +1,4 @@
-local plymeta = FindMetaTable( "Player" )
+﻿local plymeta = FindMetaTable( "Player" )
 
 AccessorFunc( plymeta, "fStamina", "Stamina", FORCE_NUMBER )
 AccessorFunc( plymeta, "fMaxStamina", "MaxStamina", FORCE_NUMBER )

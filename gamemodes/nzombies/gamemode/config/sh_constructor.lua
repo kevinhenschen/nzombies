@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzConfig = nzConfig or AddNZModule("Config")
 
 --  Defaults

@@ -1,4 +1,4 @@
--- Useful ToScreen replacement for better directional
+﻿-- Useful ToScreen replacement for better directional
 function XYCompassToScreen(pos, boundary)
 	local boundary = boundary or 0
 	local eyedir = EyeVector()
@@ -194,7 +194,7 @@ end
 
 CreateClientConVar("nz_bloodoverlay", 1, true, false)
 
-local blood_overlay = Material("materials/overlay_low_health.png", "unlitgeneric smooth")
+local blood_overlay = Material(NZOMBIES_VARS.MATERIALS.OVERLAY_LOW_HEALTH, "unlitgeneric smooth")
 local bloodpulse = true --if true, going up
 local pulse = 0
 local function DrawDamagedOverlay()

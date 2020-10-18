@@ -1,4 +1,4 @@
-local wepMeta = FindMetaTable("Weapon")
+﻿local wepMeta = FindMetaTable("Weapon")
 
 function wepMeta:NZPerkSpecialTreatment( )
 	if self:IsFAS2() or self:IsCW2() or self:IsTFA() then

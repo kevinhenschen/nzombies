@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 --debug cvars
 CreateConVar( "nz_zombie_debug", "0", { FCVAR_REPLICATED, FCVAR_ARCHIVE, FCVAR_CHEAT } )
@@ -967,7 +967,7 @@ function ENT:Attack( data )
 	if !data.attacksound then
 		local actstage = self.ActStages[self:GetActStage()]
 		local soundtbl = actstage and actstage.attacksounds or self.AttackSounds
-		data.attacksound = soundtbl and soundtbl[math.random(#soundtbl)] or Sound( "npc/vort/claw_swing1.wav" )
+		data.attacksound = soundtbl and soundtbl[math.random(#soundtbl)] or Sound( "npc/vort/claw_swing1." )
 	end
 	
 	data.hitsound = data.hitsound

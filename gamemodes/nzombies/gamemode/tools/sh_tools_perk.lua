@@ -1,4 +1,4 @@
-nzTools:CreateTool("perk", {
+﻿nzTools:CreateTool("perk", {
 	displayname = "Perk Machine Placer",
 	desc = "LMB: Place Perk Machine, RMB: Remove Perk Machine, C: Change Perk",
 	condition = function(wep, ply)

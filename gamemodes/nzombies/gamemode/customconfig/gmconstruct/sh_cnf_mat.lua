@@ -1,0 +1,1 @@
+﻿NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE = "gmconstruct/bloodline_score.png"

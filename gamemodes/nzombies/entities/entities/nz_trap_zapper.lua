@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 -- Register teh trap
 nzTraps:Register("nz_trap_zapper")

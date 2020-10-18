@@ -1,4 +1,4 @@
-
+﻿
 local function HandlePlayerDowned(ply, vel)
 	if !ply:GetNotDowned() then
 	

@@ -1,4 +1,4 @@
-function EFFECT:Init( data )
+﻿function EFFECT:Init( data )
 
 	self.Start = data:GetOrigin()
 	self.Catcher = data:GetEntity()

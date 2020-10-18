@@ -1,4 +1,4 @@
-local playerMeta = FindMetaTable("Player")
+﻿local playerMeta = FindMetaTable("Player")
 
 function playerMeta:SetNZToolData( data )
 	self.NZToolData = nil

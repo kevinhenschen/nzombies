@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzElec = nzElec or AddNZModule("Elec")
 
 -- Variables

@@ -1,5 +1,5 @@
-
---EFFECT.MatCenter = Material( "lightning.png", "unlitgeneric smooth" )
+﻿
+--EFFECT.MatCenter = Material( NZOMBIES_VARS.MATERIALS.LIGHTNING, "unlitgeneric smooth" )
 EFFECT.MatEdge = Material( "effects/tool_tracer" )
 EFFECT.MatCenter = Material( "sprites/physbeama" )
 EFFECT.MatGlow1 = Material( "sprites/physg_glow1" )

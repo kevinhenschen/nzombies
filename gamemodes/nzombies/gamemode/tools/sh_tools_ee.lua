@@ -1,4 +1,4 @@
-nzTools:CreateTool("ee", {
+﻿nzTools:CreateTool("ee", {
 	displayname = "Easter Egg Placer",
 	desc = "LMB: Easter Egg, RMB: Remove Easter Egg, Use Player Handler to select song",
 	condition = function(wep, ply)

@@ -1,4 +1,4 @@
-local wonderweapons = {}
+﻿local wonderweapons = {}
 
 -- Wonder Weapon system does NOT apply to weapons like Monkey Bombs or Ray Gun
 -- ONLY to those that you can only have 1 of at a time

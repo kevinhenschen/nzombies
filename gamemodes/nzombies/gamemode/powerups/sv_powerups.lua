@@ -1,4 +1,4 @@
--- 
+﻿-- 
 
 hook.Add("Think", "CheckActivePowerups", function()
 	for k,v in pairs(nzPowerUps.ActivePowerUps) do
@@ -95,7 +95,7 @@ sound.Add( {
 	volume = 1.0,
 	level = 75,
 	pitch = { 100, 100 },
-	sound = "nz/randombox/fire_sale.wav"
+	sound = NZOMBIES_VARS.SOUND.NZ.RANDOMBOX.FIRE_SALE
 } )
 
 function nzPowerUps:FireSale()

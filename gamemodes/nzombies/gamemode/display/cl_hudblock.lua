@@ -1,4 +1,4 @@
-local blockedhuds = {
+﻿local blockedhuds = {
 	["CHudAmmo"] = true,
 	["CHudSecondaryAmmo"] = true,
 	["CHudBattery"] = true,

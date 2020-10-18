@@ -1,4 +1,4 @@
-ENT.Type = "anim"
+﻿ENT.Type = "anim"
 ENT.Base = "base_entity"
 ENT.PrintName = "Panzer Claw"
 ENT.Author = "Zet0r"

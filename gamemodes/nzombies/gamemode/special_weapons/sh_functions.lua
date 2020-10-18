@@ -1,4 +1,4 @@
-nzSpecialWeapons.Modifiers = nzSpecialWeapons.Modifiers or {}
+﻿nzSpecialWeapons.Modifiers = nzSpecialWeapons.Modifiers or {}
 
 function nzSpecialWeapons:RegisterModifier(id, func, defaultdata)
 	nzSpecialWeapons.Modifiers[id] = {func, defaultdata}

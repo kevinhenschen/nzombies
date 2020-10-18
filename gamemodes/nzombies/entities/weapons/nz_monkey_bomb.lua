@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_monkey_bomb.lua")
 	SWEP.Weight			= 5
 	SWEP.AutoSwitchTo	= false
@@ -46,18 +46,18 @@ SWEP.Secondary.Ammo			= "none"
 SWEP.NextReload				= 1
 
 SWEP.PrimeSounds = {
-	"nz/monkey/voice_prime/raise_vox_00.wav",
-	"nz/monkey/voice_prime/raise_vox_01.wav",
-	"nz/monkey/voice_prime/raise_vox_02.wav",
-	"nz/monkey/voice_prime/raise_vox_03.wav",
-	"nz/monkey/voice_prime/raise_vox_04.wav",
-	"nz/monkey/voice_prime/raise_vox_05.wav",
-	"nz/monkey/voice_prime/raise_vox_06.wav",
-	"nz/monkey/voice_prime/raise_vox_07.wav",
-	"nz/monkey/voice_prime/raise_vox_08.wav",
-	"nz/monkey/voice_prime/raise_vox_09.wav",
-	"nz/monkey/voice_prime/raise_vox_10.wav",
-	"nz/monkey/voice_prime/raise_vox_11.wav",
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_00,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_01,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_02,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_03,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_04,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_05,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_06,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_07,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_08,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_09,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_10,
+	NZOMBIES_VARS.SOUND.NZ.MONKEY.VOICE_PRIME.RAISE_VOX_11,
 }
 
 function SWEP:Initialize()
@@ -75,7 +75,7 @@ function SWEP:Deploy()
 		surface.PlaySound(sound)
 		timer.Simple(1.2, function() 
 			if IsValid(self) then
-				surface.PlaySound("nz/monkey/hat1.wav")
+				surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.MONKEY.HAT1)
 				local i = 0
 				timer.Create("MonkeyCymbalViewmodel", 0.23, 7, function()
 					surface.PlaySound("nz/monkey/cymbals/monk_cymb_0"..math.Round(i/2)..".wav")

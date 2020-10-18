@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 local mats = {
 	Material( "decals/glass/shot1" ),

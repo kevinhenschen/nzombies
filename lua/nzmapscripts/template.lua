@@ -1,4 +1,4 @@
-local mapscript = {}
+﻿local mapscript = {}
 
 -- Any function added to this table will automatically get hooked to the hook with the same name
 function mapscript.RoundInit()

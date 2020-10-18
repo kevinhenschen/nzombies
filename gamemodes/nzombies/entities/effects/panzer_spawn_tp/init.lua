@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 EFFECT.MatEdge = Material( "effects/tool_tracer" )
 EFFECT.MatCenter = Material( "sprites/physbeama" )

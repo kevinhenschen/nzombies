@@ -1,4 +1,4 @@
-function GM:OnReloaded( )
+﻿function GM:OnReloaded( )
 	print("Reloading Data!")
 	//Reload the data from the entities back into the tables
 	//Door data

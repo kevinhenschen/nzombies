@@ -1,4 +1,4 @@
-local mat = Material("color")
+﻿local mat = Material("color")
 local white = Color(255,150,0,50)
 local point1, point2, height
 

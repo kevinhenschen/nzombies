@@ -1,4 +1,4 @@
-local plyMeta = FindMetaTable( "Player" )
+﻿local plyMeta = FindMetaTable( "Player" )
 
 function plyMeta:ReadyUp()
 

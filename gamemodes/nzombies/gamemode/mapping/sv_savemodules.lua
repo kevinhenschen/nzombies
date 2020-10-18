@@ -1,4 +1,4 @@
--- In here we have all default savemodules. You can add your own with the function used here:
+﻿-- In here we have all default savemodules. You can add your own with the function used here:
 -- nzMapping:AddSaveModule(id, {savefunc, loadfunc, cleanents, cleanfunc, prerestorefunc, postrestorefunc})
 
 -- Savefunc should return the table to be written into the save file

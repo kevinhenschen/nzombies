@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzNav = nzNav or AddNZModule("Nav")
 nzNav.Locks = nzNav.Locks or {}
 

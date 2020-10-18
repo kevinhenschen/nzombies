@@ -1,4 +1,4 @@
--- Client Server Syncing
+﻿-- Client Server Syncing
 
 
 if SERVER then

@@ -1,4 +1,4 @@
-function nzRound:OnPlayerReady( ply )
+﻿function nzRound:OnPlayerReady( ply )
 
 	self:SendReadyState( ply, true )
 

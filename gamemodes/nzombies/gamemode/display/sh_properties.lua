@@ -1,4 +1,4 @@
---[[
+﻿--[[
 	Properties added in here are added manually because they share tools and/or use specialized means of updating and fetching data
 	If you want to add a quick Properties for your tool, look at nzTools:EnableProperties() function.
 	(gamemode/tools/sh_tools.lua)

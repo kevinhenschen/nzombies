@@ -1,4 +1,4 @@
-surface.CreateFont( "pier_large", {
+﻿surface.CreateFont( "pier_large", {
 	font = "PierSans-Regular",
 	size = 48,
 	antialias = true,
@@ -124,7 +124,7 @@ function MenuToolBar:Init()
 	--Settings Button / Close button
 	if LocalPlayer():IsSuperAdmin() then
 		self.SettingsButton = vgui.Create( "DImageButton", self )
-		self.SettingsButton:SetImage( "icon_settings.png" )
+		self.SettingsButton:SetImage( NZOMBIES_VARS.MATERIALS.ICON_SETTINGS )
 		self.SettingsButton:SetPos( ScrW() - 60, 20 )
 		self.SettingsButton:SetSize( 40, 40 )
 		self.SettingsButton:SetContentAlignment( 5 )
@@ -149,7 +149,7 @@ function MenuToolBar:Init()
 	else
 		--Show close icon if user not superadmin
 		self.CloseButton = vgui.Create( "DImageButton", self )
-		self.CloseButton:SetImage( "icon_close.png" )
+		self.CloseButton:SetImage( NZOMBIES_VARS.MATERIALS.ICON_CLOSE )
 		self.CloseButton:SetPos( ScrW() - 60, 20 )
 		self.CloseButton:SetSize( 40, 40 )
 		self.CloseButton:SetContentAlignment( 5 )
@@ -396,7 +396,7 @@ function PlayerList:Init()
 	self:SetSize(500, 800)
 end
 
-local bloodline_points = Material("bloodline_score.png", "unlitgeneric smooth")
+local bloodline_points = Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE, "unlitgeneric smooth")
 function PlayerList:Paint(w, h)
 	local c = 0
 	local n = #player.GetAllReady()

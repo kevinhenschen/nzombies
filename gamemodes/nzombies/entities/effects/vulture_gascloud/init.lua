@@ -1,4 +1,4 @@
-local gasparticles = {
+﻿local gasparticles = {
 	Model("particle/particle_smokegrenade"),
 	Model("particle/particle_noisesphere")
 }

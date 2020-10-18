@@ -1,4 +1,4 @@
--- We remake the Traitor Button so it can be given a price and triggered in nZombies
+﻿-- We remake the Traitor Button so it can be given a price and triggered in nZombies
 -- If it has no price, it will not be usable - A price of 0 will make it usable for free
 
 ENT.Type = "anim"

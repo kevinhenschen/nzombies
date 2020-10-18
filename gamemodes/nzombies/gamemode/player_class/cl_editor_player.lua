@@ -1,4 +1,4 @@
---AddCSLuaFile()
+﻿--AddCSLuaFile()
 
 local default_animations = { "idle_all_01", "menu_walk" }
 

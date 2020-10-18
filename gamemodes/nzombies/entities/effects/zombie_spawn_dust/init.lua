@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 local matground = {
 	Model("particle/particle_smokegrenade"),

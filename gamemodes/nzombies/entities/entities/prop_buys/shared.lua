@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 ENT.Type = "anim"
  
@@ -32,7 +32,7 @@ function ENT:BlockUnlock(spawn)
 		--self:SetCollisionBounds( Vector(-4, -4, 0), Vector(4, 4, 64) )
 		self:SetSolid( SOLID_NONE )
 		self:SetNWLocked(false)
-		self:EmitSound("nz/effects/gone.wav")
+		self:EmitSound(NZOMBIES_VARS.SOUND.NZ.EFFECTS.GONE)
 		if !spawn then -- Spawning a prop shouldn't register it to the doors list
 			self:SetLocked(false)
 		end

@@ -1,4 +1,4 @@
--- Create new ammo types for each weapon slot; that way all 3 weapons have seperate ammo even if they share type
+﻿-- Create new ammo types for each weapon slot; that way all 3 weapons have seperate ammo even if they share type
 game.AddAmmoType( {
 	name = "nz_weapon_ammo_1",
 	dmgtype = DMG_BULLET,

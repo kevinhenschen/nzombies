@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	util.AddNetworkString( "nzRoundNumber" )
 	util.AddNetworkString( "nzRoundState" )
 	util.AddNetworkString( "nzRoundSpecial" )

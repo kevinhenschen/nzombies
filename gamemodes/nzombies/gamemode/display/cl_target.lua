@@ -1,4 +1,4 @@
---
+﻿--
 
 local traceents = {
 	["wall_buys"] = function(ent)

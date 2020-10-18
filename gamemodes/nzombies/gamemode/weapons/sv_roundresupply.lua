@@ -1,4 +1,4 @@
-nzWeps.RoundResupply = {}
+﻿nzWeps.RoundResupply = {}
 
 function nzWeps:AddAmmoToRoundResupply(ammo, count, max)
 	nzWeps.RoundResupply[ammo] = {count = count, max = max}

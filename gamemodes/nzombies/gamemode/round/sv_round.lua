@@ -1,4 +1,4 @@
-function GM:InitPostEntity()
+﻿function GM:InitPostEntity()
 
 	nzRound:Waiting()
 
@@ -250,7 +250,7 @@ function nzRound:Start()
 	--Notify
 	--PrintMessage( HUD_PRINTTALK, "ROUND: " .. self:GetNumber() .. " started" )
 	hook.Call("OnRoundStart", nzRound, self:GetNumber() )
-	--nzNotifications:PlaySound("nz/round/round_start.mp3", 1)
+	--nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND_START, 1)
 
 	timer.Create( "NZRoundThink", 0.1, 0, function() self:Think() end )
 
@@ -397,11 +397,11 @@ function nzRound:End()
 				net.WriteBool(false)
 			net.Broadcast()
 		end
-		nzNotifications:PlaySound("nz/round/game_over_-1.mp3", 21)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.GAME_OVER__1, 21)
 	elseif nzMapping.OfficialConfig then
-		nzNotifications:PlaySound("nz/round/game_over_5.mp3", 21)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.GAME_OVER_5, 21)
 	else
-		nzNotifications:PlaySound("nz/round/game_over_4.mp3", 21)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.GAME_OVER_4, 21)
 	end
 	
 	timer.Simple(10, function()

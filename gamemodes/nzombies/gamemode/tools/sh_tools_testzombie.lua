@@ -1,4 +1,4 @@
-nzTools:CreateTool("testzombie", {
+﻿nzTools:CreateTool("testzombie", {
 	displayname = "Spawn Test Zombie",
 	desc = "LMB: Create a test zombie, RMB: Remove test zombie",
 	condition = function(wep, ply)

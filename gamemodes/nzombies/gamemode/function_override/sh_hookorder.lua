@@ -1,4 +1,4 @@
--- Add to this table as more conflicting hook names are found
+﻿-- Add to this table as more conflicting hook names are found
 local hooks = {
 	"PlayerUse",
 }

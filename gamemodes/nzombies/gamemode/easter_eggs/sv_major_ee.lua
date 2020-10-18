@@ -1,4 +1,4 @@
-nzEE.Major.Steps = nzEE.Major.Steps or {}
+﻿nzEE.Major.Steps = nzEE.Major.Steps or {}
 nzEE.Major.CurrentStep = nzEE.Major.CurrentStep or 1
 
 function nzEE.Major:AddStep(func, step)

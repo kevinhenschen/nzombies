@@ -1,4 +1,4 @@
-
+﻿
 local mat = Material( "effects/tool_tracer" )
 
 local function GenerateArc(startPos, endPos, branchChance, detail, size)

@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzPerks = nzPerks or AddNZModule("Perks")
 nzPerks.Data = nzPerks.Data or {}
 

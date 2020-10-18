@@ -1,4 +1,4 @@
-local mapscript = {}
+﻿local mapscript = {}
 
 local scriptgascanpositions = {
 	{pos = Vector(4275, -1381, 39), ang = Angle(0, 0, 0)},

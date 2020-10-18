@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_grenade.lua")
 	SWEP.Weight			= 1
 	SWEP.AutoSwitchTo	= false

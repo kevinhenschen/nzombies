@@ -1,4 +1,4 @@
-nzChatCommand.Add("/cheats", CLIENT, function(ply, text)
+﻿nzChatCommand.Add("/cheats", CLIENT, function(ply, text)
 	if CLIENT then
 		if !IsValid(g_nz_cheats) then
 			g_nz_cheats = vgui.Create("NZCheatFrame")
@@ -126,14 +126,14 @@ end, true)
 
 nzChatCommand.Add("/soundcheck", SERVER, function(ply, text)
 	if ply:IsSuperAdmin() then
-		nzNotifications:PlaySound("nz/powerups/double_points.mp3", 1)
-		nzNotifications:PlaySound("nz/powerups/insta_kill.mp3", 2)
-		nzNotifications:PlaySound("nz/powerups/max_ammo.mp3", 2)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.DOUBLE_POINTS, 1)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.INSTA_KILL, 2)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.MAX_AMMO, 2)
 		nzNotifications:PlaySound("nz/powerups/nuke.mp3", 2)
 
-		nzNotifications:PlaySound("nz/round/round_start.mp3", 14)
-		nzNotifications:PlaySound("nz/round/round_end.mp3", 9)
-		nzNotifications:PlaySound("nz/round/game_over_4.mp3", 21)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND_START, 14)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.ROUND_END, 9)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.ROUND.GAME_OVER_4, 21)
 	end
 end, true)
 
@@ -262,7 +262,7 @@ nzChatCommand.Add("/tools", SERVER, function(ply, text)
 end, true, "Give creative mode tools to yourself if in Creative.")
 
 nzChatCommand.Add("/maxammo", SERVER, function(ply, text)
-	nzNotifications:PlaySound("nz/powerups/max_ammo.mp3", 2)
+	nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.MAX_AMMO, 2)
 	-- Give everyone ammo
 	for k,v in pairs(player.GetAll()) do
 		v:GiveMaxAmmo()

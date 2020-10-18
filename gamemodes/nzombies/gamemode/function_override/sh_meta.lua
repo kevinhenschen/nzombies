@@ -1,4 +1,4 @@
-local playerMeta = FindMetaTable("Player")
+﻿local playerMeta = FindMetaTable("Player")
 local wepMeta = FindMetaTable("Weapon")
 
 if SERVER then
@@ -211,7 +211,7 @@ function GM:EntityFireBullets(ent, data)
 	if ent:IsPlayer() then
 		local wep = ent:GetActiveWeapon()
 		if IsValid(wep) and wep:HasNZModifier("pap") and !wep.IsMelee and !wep.IsKnife then
-			ent:EmitSound("nz/effects/pap_shoot_glock20.wav", 60, 100, 0.7)
+			ent:EmitSound(NZOMBIES_VARS.SOUND.NZ.EFFECTS.PAP_SHOOT_GLOCK20, 60, 100, 0.7)
 		end
 	end
 

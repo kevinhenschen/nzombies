@@ -1,4 +1,4 @@
-nzTools:CreateTool("door", {
+﻿nzTools:CreateTool("door", {
 	displayname = "Door Locker",
 	desc = "LMB: Apply Door Data, RMB: Remove Door Data, C: Change Properties",
 	condition = function(wep, ply)

@@ -1,7 +1,7 @@
---Name: Lightning strike using midpoint displacement
+﻿--Name: Lightning strike using midpoint displacement
 --Author: Lolle
 
---EFFECT.MatCenter = Material( "lightning.png", "unlitgeneric smooth" )
+--EFFECT.MatCenter = Material( NZOMBIES_VARS.MATERIALS.LIGHTNING, "unlitgeneric smooth" )
 EFFECT.MatTracer = Material( "effects/tool_tracer" )
 
 --[[---------------------------------------------------------

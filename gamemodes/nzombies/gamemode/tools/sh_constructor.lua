@@ -1,4 +1,4 @@
-//Main Tables
+﻿//Main Tables
 nzTools = nzTools or AddNZModule("Tools")
 nzTools.ToolData = nzTools.ToolData or {}
 

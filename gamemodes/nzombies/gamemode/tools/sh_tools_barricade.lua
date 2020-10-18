@@ -1,4 +1,4 @@
-nzTools:CreateTool("barricade", {
+﻿nzTools:CreateTool("barricade", {
 	displayname = "Barricade Creator",
 	desc = "LMB: Place Barricade, RMB: Remove Barricade",
 	condition = function(wep, ply)

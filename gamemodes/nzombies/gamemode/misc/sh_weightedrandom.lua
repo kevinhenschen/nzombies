@@ -1,4 +1,4 @@
--- http://snippets.luacode.org/snippets/Weighted_random_choice_104
+﻿-- http://snippets.luacode.org/snippets/Weighted_random_choice_104
 
 -- Modified to allow special weight keys
 

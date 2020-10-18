@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	-- Main Tables
 	nzCurves = nzCurves or AddNZModule("Curves")
 

@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 ENT.Type = "anim"
 
@@ -91,7 +91,7 @@ function ENT:Use( activator, caller )
 		if self:GetHasPlanks() and self:GetNumPlanks() < GetConVar("nz_difficulty_barricade_planks_max"):GetInt() then
 			self:AddPlank()
                   activator:GivePoints(10)
-				  activator:EmitSound("nz/effects/repair_ching.wav")
+				  activator:EmitSound(NZOMBIES_VARS.SOUND.NZ.EFFECTS.REPAIR_CHING)
 			self.NextPlank = CurTime() + 1
 		end
 	end

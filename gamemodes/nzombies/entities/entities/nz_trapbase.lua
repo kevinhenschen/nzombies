@@ -1,4 +1,4 @@
--- Use this class as base when creating traps
+﻿-- Use this class as base when creating traps
 
 AddCSLuaFile( )
 

@@ -1,4 +1,4 @@
-ENT.Type = "point"
+﻿ENT.Type = "point"
 
 function ENT:Initialize()
 	-- Remove it as soon as it spawns, if the gamemode hasn't been enabled in Map Settings

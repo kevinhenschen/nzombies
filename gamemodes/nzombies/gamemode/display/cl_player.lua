@@ -1,4 +1,4 @@
-local playerColors = {
+﻿local playerColors = {
 	Color(239,154,154),
 	Color(244,143,177),
 	Color(159,168,218),
@@ -16,10 +16,10 @@ local playerColors = {
 }
 
 local blooddecals = {
-	Material("bloodline_score1.png", "unlitgeneric smooth"),
-	Material("bloodline_score2.png", "unlitgeneric smooth"),
-	Material("bloodline_score3.png", "unlitgeneric smooth"),
-	Material("bloodline_score4.png", "unlitgeneric smooth"),
+	Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE1, "unlitgeneric smooth"),
+	Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE2, "unlitgeneric smooth"),
+	Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE3, "unlitgeneric smooth"),
+	Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCORE4, "unlitgeneric smooth"),
 	nil
 }
 

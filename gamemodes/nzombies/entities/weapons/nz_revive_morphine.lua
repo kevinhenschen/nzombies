@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_revive_morphine.lua")
 	SWEP.Weight			= 5
 	SWEP.AutoSwitchTo	= false

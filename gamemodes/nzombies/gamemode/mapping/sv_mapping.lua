@@ -1,4 +1,4 @@
---
+﻿--
 
 function nzMapping:ZedSpawn(pos, link, ply)
 

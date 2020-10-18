@@ -1,4 +1,4 @@
-local particles = {
+﻿local particles = {
 	Model("particle/particle_ring_wave_8"),
 }
 

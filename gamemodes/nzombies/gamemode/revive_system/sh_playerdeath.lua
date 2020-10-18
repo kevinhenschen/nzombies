@@ -1,4 +1,4 @@
-
+﻿
 function nzRevive.DoPlayerDeath(ply, dmg)
 
 	if IsValid(ply) and ply:IsPlayer() then

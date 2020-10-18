@@ -1,4 +1,4 @@
--- Variables that are used on both client and server
+﻿-- Variables that are used on both client and server
 
 SWEP.Author			= ""
 SWEP.Contact			= ""

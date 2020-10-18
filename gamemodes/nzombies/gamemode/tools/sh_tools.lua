@@ -1,4 +1,4 @@
---
+﻿--
 
 function nzTools:CreateTool(id, serverdata, clientdata)
 	if SERVER then

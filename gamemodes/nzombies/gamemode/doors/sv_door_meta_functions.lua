@@ -1,4 +1,4 @@
-local meta = FindMetaTable("Entity")
+﻿local meta = FindMetaTable("Entity")
 
 function meta:UnlockDoor()
 		if self:IsDoor() then

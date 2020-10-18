@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_packapunch_arms.lua")
 	SWEP.Weight			= 5
 	SWEP.AutoSwitchTo	= false
@@ -58,7 +58,7 @@ function SWEP:Deploy()
 	timer.Simple(0.5,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/knuckle_00.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.KNUCKLE_00)
 			end
 		end
 	end)
@@ -66,7 +66,7 @@ function SWEP:Deploy()
 	timer.Simple(1.3,function()
 		if IsValid(self) and IsValid(self.Owner) then
 			if self.Owner:Alive() then
-				self:EmitSound("nz/perks/knuckle_01.wav")
+				self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PERKS.KNUCKLE_01)
 			end
 		end
 	end)

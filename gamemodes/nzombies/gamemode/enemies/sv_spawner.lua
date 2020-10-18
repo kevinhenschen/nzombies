@@ -1,4 +1,4 @@
--- Class for spawning zombies. This can be used t create different Spawners for different spawnpoints.
+﻿-- Class for spawning zombies. This can be used t create different Spawners for different spawnpoints.
 -- Warning! Creating multiple instances of this class for the same spawnpoint entity will overwrite prior instances.
 -- Author: Lolle
 

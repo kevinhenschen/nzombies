@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_bowie_knife.lua")
 	SWEP.Weight			= 5
 	SWEP.AutoSwitchTo	= false
@@ -60,22 +60,22 @@ end
 function SWEP:Deploy()
 	self:SendWeaponAnim(ACT_VM_DRAW)
 	self.HolsterTime = CurTime() + 2.5
-	self:EmitSound("nz/bowie/draw/bowie_start.wav")
+	self:EmitSound(NZOMBIES_VARS.SOUND.NZ.BOWIE.DRAW.BOWIE_START)
 	
 	timer.Simple(0.7, function()
 		if IsValid(self) then
-			self:EmitSound("nz/bowie/draw/bowie_turn.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.BOWIE.DRAW.BOWIE_TURN)
 		end
 	end)
 	timer.Simple(1.4, function()
 		if IsValid(self) then
-			self:EmitSound("nz/bowie/draw/bowie_toss.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.BOWIE.DRAW.BOWIE_TOSS)
 		end
 	end)
 	
 	timer.Simple(1.9, function()
 		if IsValid(self) then
-			self:EmitSound("nz/bowie/draw/bowie_catch.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.BOWIE.DRAW.BOWIE_CATCH)
 		end
 	end)
 end

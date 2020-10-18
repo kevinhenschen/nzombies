@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzPlayers = nzPlayers or AddNZModule("Players")
 nzPlayers.Data = nzPlayers.Data or {}
 

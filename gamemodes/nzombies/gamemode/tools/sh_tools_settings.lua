@@ -1,4 +1,4 @@
-nzTools:CreateTool("settings", {
+﻿nzTools:CreateTool("settings", {
 	displayname = "Map Settings",
 	desc = "Use the Tool Interface and press Submit to save changes",
 	condition = function(wep, ply)

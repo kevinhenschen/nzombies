@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 ENT.Base = "base_nextbot"
 ENT.PrintName = "Faked downed player"

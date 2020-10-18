@@ -1,4 +1,4 @@
-//Fonts (Since they don't work with workshop)
+﻿//Fonts (Since they don't work with workshop)
 resource.AddFile( "resource/fonts/DK Umbilical Noose.ttf" )
 
 //Content Pack

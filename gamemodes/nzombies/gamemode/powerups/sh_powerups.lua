@@ -1,4 +1,4 @@
--- 
+﻿-- 
 
 if SERVER then
 
@@ -62,7 +62,7 @@ if SERVER then
 		end
 
 		-- Notify
-		if IsValid(ply) then ply:EmitSound("nz/powerups/power_up_grab.wav") end
+		if IsValid(ply) then ply:EmitSound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.POWER_UP_GRAB) end
 		if PowerupData.announcement then
 			nzNotifications:PlaySound(PowerupData.announcement, 1)
 		end
@@ -100,7 +100,7 @@ if SERVER then
 		ent:SetPos(pos)
 		ent:SetAngles(PowerupData.angle)
 		ent:Spawn()
-		ent:EmitSound("nz/powerups/power_up_spawn.wav")
+		ent:EmitSound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.POWER_UP_SPAWN)
 	end
 
 end
@@ -169,7 +169,7 @@ nzPowerUps:NewPowerUp("dp", {
 	scale = 1,
 	chance = 5,
 	duration = 30,
-	announcement = "nz/powerups/double_points.mp3",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.DOUBLE_POINTS,
 	func = function(self, ply)
 	end,
 })
@@ -184,7 +184,7 @@ nzPowerUps:NewPowerUp("maxammo", {
 	chance = 5,
 	duration = 0,
 	func = (function(self, ply)
-		nzNotifications:PlaySound("nz/powerups/max_ammo.mp3", 2)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.MAX_AMMO, 2)
 		-- Give everyone ammo
 		for k,v in pairs(player.GetAll()) do
 			v:GiveMaxAmmo()
@@ -201,7 +201,7 @@ nzPowerUps:NewPowerUp("insta", {
 	scale = 1,
 	chance = 5,
 	duration = 30,
-	announcement = "nz/powerups/insta_kill.mp3",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.INSTA_KILL,
 	func = function(self, ply)
 		print("Called")
 	end,
@@ -216,7 +216,7 @@ nzPowerUps:NewPowerUp("nuke", {
 	scale = 1,
 	chance = 5,
 	duration = 0,
-	announcement = "nz/powerups/nuke.wav",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.NUKE,
 	func = (function(self, ply)
 		nzPowerUps:Nuke(ply:GetPos())
 	end),
@@ -231,7 +231,7 @@ nzPowerUps:NewPowerUp("firesale", {
 	scale = 0.75,
 	chance = 1,
 	duration = 30,
-	announcement = "nz/powerups/fire_sale_announcer.wav",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.FIRE_SALE_ANNOUNCER,
 	func = (function(self, ply)
 		nzPowerUps:FireSale()
 	end),
@@ -262,8 +262,8 @@ nzPowerUps:NewPowerUp("carpenter", {
 	chance = 5,
 	duration = 0,
 	func = (function(self, ply)
-		nzNotifications:PlaySound("nz/powerups/carpenter.wav", 0)
-		nzNotifications:PlaySound("nz/powerups/carp_loop.wav", 1)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.CARPENTER, 0)
+		nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.POWERUPS.CARP_LOOP, 1)
 		nzPowerUps:Carpenter()
 	end),
 })
@@ -277,7 +277,7 @@ nzPowerUps:NewPowerUp("zombieblood", {
 	scale = 1,
 	chance = 2,
 	duration = 30,
-	announcement = "nz/powerups/zombie_blood.wav",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.ZOMBIE_BLOOD,
 	func = (function(self, ply)
 		ply:SetTargetPriority(TARGET_PRIORITY_NONE)
 	end),
@@ -295,7 +295,7 @@ nzPowerUps:NewPowerUp("deathmachine", {
 	scale = 1,
 	chance = 2,
 	duration = 30,
-	announcement = "nz/powerups/deathmachine.mp3",
+	announcement = NZOMBIES_VARS.SOUND.NZ.POWERUPS.DEATHMACHINE,
 	func = (function(self, ply)
 		ply:SetUsingSpecialWeapon(true)
 		ply:Give("nz_death_machine")

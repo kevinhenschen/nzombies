@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	AddCSLuaFile("nz_death_machine.lua")
 	SWEP.Weight			= 5
 	SWEP.AutoSwitchTo	= true
@@ -63,7 +63,7 @@ function SWEP:Equip( owner )
 	owner:SetActiveWeapon("nz_death_machine")
 end
 
-local shootsound = Sound("nz/deathmachine/loop_l_.wav")
+local shootsound = Sound(NZOMBIES_VARS.SOUND.NZ.DEATHMACHINE.LOOP_L_)
 function SWEP:PrimaryAttack()
 	
 	self:SetNextPrimaryFire(CurTime() + 0.05)

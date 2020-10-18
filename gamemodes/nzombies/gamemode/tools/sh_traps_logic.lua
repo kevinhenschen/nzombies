@@ -1,4 +1,4 @@
-nzTools:CreateTool("traps_logic", {
+﻿nzTools:CreateTool("traps_logic", {
 	displayname = "Traps, Buttons, Logic",
 	desc = "LMB: Create Entity, RMB: Remove Entity, R: Duplicate Entity, C: Edit Properties",
 	condition = function(wep, ply)

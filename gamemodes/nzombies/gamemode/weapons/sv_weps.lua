@@ -1,4 +1,4 @@
-if not ConVarExists("nz_papattachments") then CreateConVar("nz_papattachments", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_NOTIFY}, "Whether Pack-a-Punching a CW2.0 weapon will attach random attachments for each category. Will also strip players of attachments at the beginning of the game.") end
+﻿if not ConVarExists("nz_papattachments") then CreateConVar("nz_papattachments", 1, {FCVAR_SERVER_CAN_EXECUTE, FCVAR_NOTIFY}, "Whether Pack-a-Punching a CW2.0 weapon will attach random attachments for each category. Will also strip players of attachments at the beginning of the game.") end
 
 hook.Add("PlayerSpawn", "RemoveCW2Attachments", function(ply)
 	if GetConVar("nz_papattachments"):GetBool() and CustomizableWeaponry then

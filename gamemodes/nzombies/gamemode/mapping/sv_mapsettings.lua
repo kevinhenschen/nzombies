@@ -1,4 +1,4 @@
-
+﻿
 function nzMapping:LoadMapSettings(data)
 	if !data then return end
 	

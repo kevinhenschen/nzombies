@@ -1,4 +1,4 @@
-local script = {} -- Create the table in which to add functions to
+﻿local script = {} -- Create the table in which to add functions to
 
 local shieldparts = {
 	[1] = { -- Fence
@@ -153,7 +153,7 @@ function script.camtest()
 	nzEE.Cam:QueueView(5, nil, nil, nil, true)
 	nzEE.Cam:Text("Beat it!")
 	nzEE.Cam:Function( function() game.SetTimeScale(0.2) end)
-	nzEE.Cam:Music("nz/easteregg/motd_standard.wav")
+	nzEE.Cam:Music(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.MOTD_STANDARD)
 	nzEE.Cam:QueueView(15, Vector(31, -13, -43), Vector(400, -13, -43), Angle(-20,0,0), true)
 	nzEE.Cam:Text("Beat it!")
 	nzEE.Cam:Function( function() game.SetTimeScale(1) end)

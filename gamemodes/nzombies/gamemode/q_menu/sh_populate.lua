@@ -1,4 +1,4 @@
-
+﻿
 function nzQMenu.AddNewEntity( ent, icon, name )
 	table.insert(nzQMenu.Data.Entities, {ent, icon, name})
 end

@@ -1,4 +1,4 @@
-ENT.Type = "point"
+﻿ENT.Type = "point"
 
 
 function ENT:Initialize()

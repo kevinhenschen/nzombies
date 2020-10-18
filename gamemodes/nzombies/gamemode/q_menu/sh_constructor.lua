@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzQMenu = nzQMenu or AddNZModule("QMenu")
 nzQMenu.Data = nzQMenu.Data or {}
 

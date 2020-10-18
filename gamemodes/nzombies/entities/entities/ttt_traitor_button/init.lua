@@ -1,4 +1,4 @@
-AddCSLuaFile("shared.lua")
+﻿AddCSLuaFile("shared.lua")
 include("shared.lua")
 
 -- serverside only

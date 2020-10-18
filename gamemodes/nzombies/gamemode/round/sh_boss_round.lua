@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	function nzRound:SetNextBossRound( num )
 		local round = self:GetNumber()
 		if round == -1 then

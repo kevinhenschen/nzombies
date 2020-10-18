@@ -1,4 +1,4 @@
--- Client Server Syncing
+﻿-- Client Server Syncing
 
 if SERVER then
 
@@ -30,9 +30,9 @@ if CLIENT then
 		local on = net.ReadBool()
 		print(on)
 		if on then
-			surface.PlaySound("nz/machines/power_up.wav")
+			surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.MACHINES.POWER_UP)
 		else
-			surface.PlaySound("nz/machines/power_down.wav")
+			surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.MACHINES.POWER_DOWN)
 		end
 	end
 	

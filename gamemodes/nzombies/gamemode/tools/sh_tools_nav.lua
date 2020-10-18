@@ -1,4 +1,4 @@
-nzTools:CreateTool("navedit", {
+﻿nzTools:CreateTool("navedit", {
 	displayname = "Navmesh Editor",
 	desc = "Q: Select edit mode",
 	condition = function(wep, ply)

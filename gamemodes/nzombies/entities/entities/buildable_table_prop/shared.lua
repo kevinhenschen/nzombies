@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 ENT.Type = "anim"
  

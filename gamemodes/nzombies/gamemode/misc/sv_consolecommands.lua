@@ -1,4 +1,4 @@
--- Actual Commands
+﻿-- Actual Commands
 
 -- Quick reload for dedicated severs
 concommand.Add("nz_qr", function()

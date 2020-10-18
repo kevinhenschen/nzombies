@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	util.AddNetworkString("NZMapScript")
 	util.AddNetworkString("NZMapScriptUnload")
 	function nzMapping:LoadScript( name )

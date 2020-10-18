@@ -1,4 +1,4 @@
-
+﻿
 local mats = {
 	Material( "decals/glass/shot1" ),
 	Material( "decals/glass/shot2" ),

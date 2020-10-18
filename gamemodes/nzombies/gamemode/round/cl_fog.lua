@@ -1,4 +1,4 @@
-local fade
+﻿local fade
 local fadetime = 5
 
 local fogstart = fogstart or 50

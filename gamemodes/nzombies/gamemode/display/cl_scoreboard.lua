@@ -1,4 +1,4 @@
-
+﻿
 surface.CreateFont( "ScoreboardDefault", {
 	font	= "Helvetica",
 	size	= 22,
@@ -11,7 +11,7 @@ surface.CreateFont( "ScoreboardDefaultTitle", {
 	weight	= 800
 } )
 
-local bloodline_scoreboard = Material("bloodline_scoreboard.png", "unlitgeneric smooth")
+local bloodline_scoreboard = Material(NZOMBIES_VARS.MATERIALS.BLOODLINE_SCOREBOARD, "unlitgeneric smooth")
 
 --
 -- This defines a new panel type for the player row. The player row is given a player

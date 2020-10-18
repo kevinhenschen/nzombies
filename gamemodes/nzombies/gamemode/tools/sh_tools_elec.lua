@@ -1,4 +1,4 @@
-nzTools:CreateTool("elec", {
+﻿nzTools:CreateTool("elec", {
 	displayname = "Electricity Switch Placer",
 	desc = "LMB: Place Electricity Switch, RMB: Remove Switch",
 	condition = function(wep, ply)

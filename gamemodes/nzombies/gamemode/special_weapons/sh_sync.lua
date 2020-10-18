@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	util.AddNetworkString("nzSendSpecialWeapon")
 
 	function nzSpecialWeapons:SendSpecialWeaponAdded(ply, wep, id)

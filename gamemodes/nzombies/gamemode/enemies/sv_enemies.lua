@@ -1,4 +1,4 @@
-function nzEnemies:TotalAlive()
+﻿function nzEnemies:TotalAlive()
 	local c = 0
 
 	-- Count

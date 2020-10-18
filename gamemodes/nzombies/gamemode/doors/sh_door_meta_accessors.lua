@@ -1,4 +1,4 @@
-local meta = FindMetaTable("Entity")
+﻿local meta = FindMetaTable("Entity")
 
 nzDoors.MapDoors = nzDoors.MapDoors or {}
 nzDoors.PropDoors = nzDoors.PropDoors or {}

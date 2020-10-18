@@ -1,4 +1,4 @@
-local plyMeta = FindMetaTable( "Player" )
+﻿local plyMeta = FindMetaTable( "Player" )
 AccessorFunc( plyMeta, "iLastWeaponSlot", "LastWeaponSlot", FORCE_NUMBER)
 AccessorFunc( plyMeta, "iCurrentWeaponSlot", "CurrentWeaponSlot", FORCE_NUMBER)
 function plyMeta:SelectWeapon( class )

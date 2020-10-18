@@ -1,4 +1,4 @@
--- Chat Commands module
+﻿-- Chat Commands module
 nzChatCommand = nzChatCommand or AddNZModule("chatcommand")
 
 nzChatCommand.commands = nzChatCommand.commands or {}

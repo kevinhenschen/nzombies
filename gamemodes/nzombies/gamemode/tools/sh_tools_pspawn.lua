@@ -1,4 +1,4 @@
-nzTools:CreateTool("pspawn", {
+﻿nzTools:CreateTool("pspawn", {
 	displayname = "Player Spawn Creator",
 	desc = "LMB: Place Spawnpoint, RMB: Remove Spawnpoint",
 	condition = function(wep, ply)

@@ -1,4 +1,4 @@
-
+﻿
 ENT.Sound				= {}
 ENT.Sound.Blip			= "Grenade.Blip"
 ENT.Sound.Explode		= "BaseGrenade.Explode"

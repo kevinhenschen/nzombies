@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 ENT.Type = "anim"
 
@@ -105,7 +105,7 @@ function ENT:SpawnWeapon(activator, class)
 	--wep:SetParent( self )
 	wep.Box = self
 	--wep:SetAngles( self:GetAngles() )
-	self:EmitSound("nz/randombox/random_box_jingle.wav")
+	self:EmitSound(NZOMBIES_VARS.SOUND.NZ.RANDOMBOX.RANDOM_BOX_JINGLE)
 
 	return wep
 end
@@ -155,7 +155,7 @@ function ENT:MoveAway()
 			self.SpawnPoint.Box = nil
 			--self.SpawnPoint:SetBodygroup(1,0)
 			self:MoveToNewSpot(self.SpawnPoint)
-			self:EmitSound("nz/randombox/poof.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.RANDOMBOX.POOF)
 			self:Remove()
 		end)
 		--print(self:GetMoveType())

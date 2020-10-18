@@ -1,4 +1,4 @@
-ENT.Type = "anim"
+﻿ENT.Type = "anim"
 
 ENT.PrintName		= "easter_egg"
 ENT.Author			= "Alig96"

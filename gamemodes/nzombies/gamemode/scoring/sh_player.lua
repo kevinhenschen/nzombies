@@ -1,4 +1,4 @@
-local meta = FindMetaTable("Player")
+﻿local meta = FindMetaTable("Player")
 
 function meta:GetTotalKills()
 	return self:GetNWInt("iZombiesKilled", 0)

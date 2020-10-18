@@ -1,4 +1,4 @@
-AddCSLuaFile( )
+﻿AddCSLuaFile( )
 
 ENT.Type = "anim"
 
@@ -44,7 +44,7 @@ function ENT:Initialize()
 				self:SetModel("models/hoff/props/teddy_bear/teddy_bear.mdl")
 				self:SetAngles( self.Box:GetAngles() + Angle(-90,90,0) )
 				self:SetLocalVelocity(self.Box:GetAngles():Up()*30)
-				nzNotifications:PlaySound("nz/randombox/teddy_bear_laugh.wav", 0)
+				nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.RANDOMBOX.TEDDY_BEAR_LAUGH, 0)
 				self:SetIsTeddy(true)
 				if IsValid(self.Buyer) then self.Buyer:GivePoints(950) end -- Refund please
 			else

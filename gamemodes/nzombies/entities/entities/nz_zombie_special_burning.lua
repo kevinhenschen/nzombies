@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 ENT.Base = "nz_zombie_walker"
 ENT.PrintName = "Burning Walker"

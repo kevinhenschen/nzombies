@@ -1,4 +1,4 @@
-AddCSLuaFile()
+﻿AddCSLuaFile()
 
 ENT.Base = "nz_zombiebase"
 ENT.PrintName = "Panzersoldat"
@@ -23,21 +23,21 @@ ENT.DeathSequences = {
 }
 
 ENT.AttackSounds = {
-	"nz/panzer/attack/mech_swing_00.wav",
-	"nz/panzer/attack/mech_swing_01.wav",
-	"nz/panzer/attack/mech_swing_02.wav",
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_00,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_01,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_02,
 }
 
 ENT.AttackHitSounds = {
-	"nz/panzer/attack/mech_swing_00.wav",
-	"nz/panzer/attack/mech_swing_01.wav",
-	"nz/panzer/attack/mech_swing_02.wav",
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_00,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_01,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.ATTACK.MECH_SWING_02,
 }
 
 ENT.WalkSounds = {
-	"nz/panzer/ambient/mech_ambi_00.wav",
-	"nz/panzer/ambient/mech_ambi_01.wav",
-	"nz/panzer/ambient/mech_ambi_02.wav",
+	NZOMBIES_VARS.SOUND.NZ.PANZER.AMBIENT.MECH_AMBI_00,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.AMBIENT.MECH_AMBI_01,
+	NZOMBIES_VARS.SOUND.NZ.PANZER.AMBIENT.MECH_AMBI_02,
 }
 
 ENT.ActStages = {
@@ -216,7 +216,7 @@ function ENT:OnZombieDeath(dmgInfo)
 
 	timer.Simple(dur - 0.5, function()
 		if IsValid(self) then
-			self:EmitSound("nz/panzer/mech_explode.wav")
+			self:EmitSound(NZOMBIES_VARS.SOUND.NZ.PANZER.MECH_EXPLODE)
 		end
 	end)
 	timer.Simple(dur, function()

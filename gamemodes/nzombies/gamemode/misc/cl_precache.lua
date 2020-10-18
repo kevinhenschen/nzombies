@@ -1,4 +1,4 @@
-
+﻿
 -- Zombies
 util.PrecacheModel("models/nz_zombie/zombie_rerig_animated.mdl")
 util.PrecacheModel("models/nz_zombie/zombie_hellhound.mdl")

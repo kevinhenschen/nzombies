@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	util.AddNetworkString( "nzMapDoorCreation" )
 	util.AddNetworkString( "nzPropDoorCreation" )
 	util.AddNetworkString( "nzAllDoorsLocked" )

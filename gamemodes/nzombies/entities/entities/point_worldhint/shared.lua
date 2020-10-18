@@ -1,4 +1,4 @@
-ENT.Type = "anim"
+﻿ENT.Type = "anim"
 
 AccessorFuncDT(ENT, "Viewable", "Int", 0)
 AccessorFuncDT(ENT, "Hint", "String", 0)

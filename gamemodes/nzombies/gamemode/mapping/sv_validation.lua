@@ -1,4 +1,4 @@
-function nzMapping:CheckSpawns()
+﻿function nzMapping:CheckSpawns()
 
 	--Check Player spawns
 	if #ents.FindByClass("player_spawns") == 0 then

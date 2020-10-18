@@ -1,4 +1,4 @@
-nzTools:CreateTool("zspecialspawn", {
+﻿nzTools:CreateTool("zspecialspawn", {
 	displayname = "Special Spawn Creator",
 	desc = "LMB: Place Spawnpoint, RMB: Remove Spawnpoint",
 	condition = function(wep, ply)

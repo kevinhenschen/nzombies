@@ -1,4 +1,4 @@
-//Main Text
+﻿//Main Text
 surface.CreateFont( "nz.display.hud.main", {
 	font = "DK Umbilical Noose", //Avenir Next
 	size = 48,

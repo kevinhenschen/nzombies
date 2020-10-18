@@ -1,4 +1,4 @@
-local CheatFrame = {}
+﻿local CheatFrame = {}
 
 function CheatFrame:Init()
 	self:SetTitle("Cheats")

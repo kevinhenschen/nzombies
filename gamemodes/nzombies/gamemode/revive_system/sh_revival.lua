@@ -1,4 +1,4 @@
---
+﻿--
 local revivefailtime = 0.2
 
 if SERVER then

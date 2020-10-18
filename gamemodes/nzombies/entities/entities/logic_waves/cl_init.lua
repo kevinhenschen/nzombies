@@ -1,4 +1,4 @@
-
+﻿
 function ENT:Initialize()
 	self:DrawShadow(false)
 	self:SetMoveType(MOVETYPE_NONE)

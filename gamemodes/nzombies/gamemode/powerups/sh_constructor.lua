@@ -1,4 +1,4 @@
--- Main Tables
+﻿-- Main Tables
 nzPowerUps = nzPowerUps or AddNZModule("PowerUps")
 nzPowerUps.Data = nzPowerUps.Data or {}
 

@@ -1,4 +1,4 @@
-function nzQMenu:CreatePropsMenu( )
+﻿function nzQMenu:CreatePropsMenu( )
 
 	-- Data we will need later
 	local data -- Table with spawnlist data

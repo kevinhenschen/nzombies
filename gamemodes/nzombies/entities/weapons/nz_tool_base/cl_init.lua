@@ -1,4 +1,4 @@
-include('shared.lua')
+﻿include('shared.lua')
 
 SWEP.PrintName			= "nz_base_tool"			
 SWEP.Slot				= 0	

@@ -1,4 +1,4 @@
-
+﻿
 	-- Weapon base courtesy of CptFuzzies SWEP Bases project
 	-- Recoded to do more balanced damage
 

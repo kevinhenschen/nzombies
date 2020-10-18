@@ -1,4 +1,4 @@
-nzTools:CreateTool("zspawn", {
+﻿nzTools:CreateTool("zspawn", {
 	displayname = "Zombie Spawn Creator",
 	desc = "LMB: Place Spawnpoint, RMB: Remove Spawnpoint",
 	condition = function(wep, ply)

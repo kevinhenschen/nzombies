@@ -1,4 +1,4 @@
---Gamemode Overrides
+﻿--Gamemode Overrides
 
 function GM:PlayerInitialSpawn( ply )
 	timer.Simple( 0, function() ply:SetSpectator() end )

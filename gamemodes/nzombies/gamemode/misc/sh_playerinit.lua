@@ -1,4 +1,4 @@
-if SERVER then
+﻿if SERVER then
 	util.AddNetworkString("nz_PlayerInit")
 	net.Receive("nz_PlayerInit", function(len, ply)
 		hook.Call("PlayerFullyInitialized", nil, ply)

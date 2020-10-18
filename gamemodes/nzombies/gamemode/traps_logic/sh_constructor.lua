@@ -1,4 +1,4 @@
--- Setup round module
+﻿-- Setup round module
 nzTraps = nzTraps or AddNZModule("Traps")
 nzLogic = nzLogic or AddNZModule("Logic")
 

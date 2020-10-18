@@ -1,4 +1,4 @@
-function nzRound:GetState() return self.State end
+﻿function nzRound:GetState() return self.State end
 function nzRound:SetState( state ) self.State = state end
 
 function nzRound:GetNumber() return self.Number or 0 end

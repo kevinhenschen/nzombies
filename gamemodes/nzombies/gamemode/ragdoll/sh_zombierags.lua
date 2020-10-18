@@ -1,4 +1,4 @@
-
+﻿
 local function cleanrag(ent, ragdoll, time)
 	local dTime = math.random( time*0.75, time*1.25 )
 

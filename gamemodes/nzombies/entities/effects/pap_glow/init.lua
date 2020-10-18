@@ -1,7 +1,7 @@
---Name: Lightning strike using midpoint displacement
+﻿--Name: Lightning strike using midpoint displacement
 --Author: Lolle
 
---EFFECT.MatCenter = Material( "lightning.png", "unlitgeneric smooth" )
+--EFFECT.MatCenter = Material( NZOMBIES_VARS.MATERIALS.LIGHTNING, "unlitgeneric smooth" )
 EFFECT.MatEdge = Material( "effects/tool_tracer" )
 EFFECT.MatCenter = Material( "sprites/physbeama" )
 EFFECT.MatGlow1 = Material( "sprites/physg_glow1" )
@@ -26,7 +26,7 @@ function EFFECT:Init( data )
 
 	self:SetRenderBoundsWS( self.Pos, self.Pos, Vector(100,100,100) )
 
-	--sound.Play("nz/hellhound/spawn/prespawn.wav", self.Pos, 100, 100, 1)
+	--sound.Play(NZOMBIES_VARS.SOUND.NZ.HELLHOUND.SPAWN.PRESPAWN, self.Pos, 100, 100, 1)
 
 end
 

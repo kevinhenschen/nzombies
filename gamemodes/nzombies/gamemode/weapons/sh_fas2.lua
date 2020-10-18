@@ -1,4 +1,4 @@
-function FAS2_PlayAnim(wep, anim, speed, cyc, time)
+﻿function FAS2_PlayAnim(wep, anim, speed, cyc, time)
 	speed = speed and speed or 1
 	cyc = cyc and cyc or 0
 	time = time or 0

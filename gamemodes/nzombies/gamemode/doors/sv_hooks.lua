@@ -1,4 +1,4 @@
-function nzDoors:OnPlayerBuyDoor( ply, door )
+﻿function nzDoors:OnPlayerBuyDoor( ply, door )
 	
 end
 

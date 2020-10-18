@@ -1,4 +1,4 @@
-"TableToKeyValues"
+﻿"TableToKeyValues"
 {
 	"1"
 	{

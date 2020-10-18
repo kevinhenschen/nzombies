@@ -1,4 +1,4 @@
-local HealthRegen = {
+﻿local HealthRegen = {
 	Amount = 10,
 	Delay = 3,
 	Rate = 0.05

@@ -1,4 +1,4 @@
-nzTools:CreateTool("rbox", {
+﻿nzTools:CreateTool("rbox", {
 	displayname = "Random Box Spawnpoint",
 	desc = "LMB: Place Random Box Spawnpoint, RMB: Remove Random Box Spawnpoint",
 	condition = function(wep, ply)

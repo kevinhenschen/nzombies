@@ -1,4 +1,4 @@
-function AccessorFuncDT(tab, membername, type, id)
+﻿function AccessorFuncDT(tab, membername, type, id)
 	local emeta = FindMetaTable("Entity")
 	local setter = emeta["SetDT"..type]
 	local getter = emeta["GetDT"..type]

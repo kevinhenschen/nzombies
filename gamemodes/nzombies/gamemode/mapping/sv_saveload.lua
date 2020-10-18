@@ -1,4 +1,4 @@
-nzMapping.Version = 400 --Note to Ali; Any time you make an update to the way this is saved, increment this.
+﻿nzMapping.Version = 400 --Note to Ali; Any time you make an update to the way this is saved, increment this.
 
 local savemodules = savemodules or {}
 

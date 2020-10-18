@@ -1,4 +1,4 @@
-local meleetypes = {
+﻿local meleetypes = {
 	[DMG_CLUB] = true,
 	[DMG_SLASH] = true,
 	[DMG_CRUSH] = true,

@@ -1,4 +1,4 @@
-local plyMeta = FindMetaTable( "Player" )
+﻿local plyMeta = FindMetaTable( "Player" )
 
 AccessorFunc( plyMeta, "bReady", "Ready", FORCE_BOOL )
 function plyMeta:IsReady() return self:GetReady() end

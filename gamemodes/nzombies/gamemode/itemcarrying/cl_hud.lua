@@ -1,4 +1,4 @@
-local function DrawItemCarryHud()
+﻿local function DrawItemCarryHud()
 
 	local scale = (ScrW()/1920 + 1)/2
 	local ply = LocalPlayer()
@@ -64,7 +64,7 @@ net.Receive( "nzItemCarryPlayersNotif", function()
 		end
 	end
 	
-	surface.PlaySound("nz/easteregg/ee_item_grab1.wav")
+	surface.PlaySound(NZOMBIES_VARS.SOUND.NZ.EASTEREGG.EE_ITEM_GRAB1)
 end)
 
 local function DrawItemCarryNotifications()
