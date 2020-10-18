@@ -1,60 +1,82 @@
 nZombies
 ========
+ORIGINAL README.md : https://github.com/Zet0rz/nzombies/blob/master-workshop/README.md
 
-A GM13 Nazi Zombies style (WIP) gamemode
+THIS README EXTENDS IS A BETA (***IMPROVED AND MORE BEAUTIFUL VERSION TO COME! :)***)
 
-Download folder and place it in garrysmod/garrysmod/addons
-Make sure the structure has a path to addon.json like this: garrysmod/garrysmod/addons/nzombies/addon.json
+# Dillinger
+# New Features!
 
-Get the content pack with all models and materials here:
-http://steamcommunity.com/sharedfiles/filedetails/?id=675138912
+  - You can add custom "mp3 / wav / png" in depend of the select map !
 
-Get the collection of weapon packs used by the official configs here:
-http://steamcommunity.com/sharedfiles/filedetails/?id=673266588
 
-If you have bugs, suggestions, or general improvements, open up an issue with the issue button at the top. If you want to help, feel free to create pull requests with your changes. If you have questions, add me on steam :)
+Advantages :
+  - No Code !
+  - More Faster !
+  - no knowledge of LUA required!
 
-This is an edited version from Aligs original featuring these changes:
+### HOW TO DO ?!
+I have an SCP themed map! I want to make some design / sound modifications to make it more believable!
 
-- Revival System & Health
-	- Fully working revival system, including crawling around and animations
+For it:
 
-- Navigation Tools
-	- Lock areas of the maps based on doors, allowing Zombies to navigate around them
+* [**scp_map**] - This is my map named !
+* [**Jugger Icon**] - I Want to change this icon !
+* [**Jugger Jingle**] - I Want to change this jingle !!
+* [**I HAVE ALREADY ALL FILES NEEDED**] - ***WARNING ! YOU NEED TO HAVE SAME FREQUENCY AND FORMAT TO WORK PROPELY (FOR MUSIC), AND SAME ASPECT RATIO / FORMAT FOR IMAGE***
 
-- Additional Content
-	- All perks up until Black Ops 3; all DLC working!
-	- A proper HUD!
-	- More Powerups
-	- More sounds
-	- More effects
-  - Official configs w/ Full Easter Eggs
-  - Traps
-	- Better editing in creative mode
-		- Undo system
-		- Context Menu to quickly edit properties without equipping tool (Hold C)
-		- Many more props, light effects, sky/fog/sun editors, fire entities, and more ...
-    - Better tool system
+Let's go !
 
-- Better Mapping!
-	- Decide weapons in box, music easter egg songs, boss rounds, special rounds
-	- Decide starting weapon and starting amount of points
-  - Support for many more types of doors
+### STEP 1 - FIND THE DEFAUT ICON NAME
 
-- Better Zombie AI (Thanks Lolle!)
+GO TO :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies\gamemodes\nzombies\gamemode\customconfig\default***
 
-- Easy Mismatch Correction System
-	- Loading configs using weapons you may not have installed creates an easy menu to replace them
-	- Applies to wall buys, random box list, perks (if scripted in), and more as new stuff is added
-		
-- Better Mechanics
-	- Proper Weapon System
-	- Better Zombie health and speed curves
-	
-- Misc changes
-	- Speed Cola and Double Tap now works on all weapons!
-	- Wall Buys are actual chalk-outlines!
-  - Zombies are actual Der Riese models w/ Animations and sound!
+AND FIND :
 
-- Workshop Release To-do list:
-	Check the Issues tab with the "Workshop Release" milestone. Feel free to discuss your opinion about the things in there, it would help greatly.
+```sh
+sh_cnf_lang_default.lua (***FOR LANGUAGE / SCRIPT TEXT // NOT RELEASE FOR MOMENT !!***)
+sh_cnf_mat_default.lua (*** FOR MATERIAL ***)
+sh_cnf_snd_default.lua (*** FOR SOUND // WARNING : ALL SOUND FILES WAS NOT CORRECTLY IMPLEMENTS : EXAMPLE > SOME SOUND USE RANDOM LOGIC TO FIND AND NOT ONLY RAW SOUND FILENAME TO WORK)
+```
+
+***OK ! I WANT TO CHANGE MATERIAL : I OPEN (sh_cnf_mat_default.lua) AND I SEARCH JUGGER ICON !!!***
+***FIND IT ! :D ==> NZOMBIES_VARS.MATERIALS.PERK_ICONS.JUGG = "perk_icons/jugg.png"***
+
+I COPY IT AND I GO IN :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies\gamemodes\nzombies\gamemode\customconfig*** 
+
+I CREATE A FOLDER :
+***IF YOU MAP NAMED "scp_map" AND CREATE A "scpmap" FOLDER***
+
+OK ! NOW CREATE A FILE IN THIS FOLDER **(YOU MUST NEVER LEAVE AN EMPTY FILE !!!)** :
+***sh_cnf_mat.lua (for materials)***
+
+NOW ... RETURN IN ADDON FOLDER :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons***
+
+AND CREATE A FOLDER :
+***Example : C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies_scpmap***
+
+FILL THIS FOLDER WITH : 
+***Material Folder (Like this) : C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies_scpmap\materials***
+
+OK ! NOW CREATE A FOLDER IN YOU'RE MATERIALS FOLDER LIKE THIS :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies_scpmap\materials\scpmap***
+
+AND PASTE YOU'RE PNG IN THIS FOLDER :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies_scpmap\materials\scpmap\jugg.png***
+
+NOW RETURN AND OPEN :
+***C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies\gamemodes\nzombies\gamemode\customconfig\scpmap\sh_cnf_mat.lua*** 
+
+PASTE THE PREVIOUS VARIABLE (**NZOMBIES_VARS.MATERIALS.PERK_ICONS.JUGG = "perk_icons/jugg.png**) AND CHANGE THIS TO :
+***NZOMBIES_VARS.MATERIALS.PERK_ICONS.JUGG = "scpmap/jugg.png***
+
+***HOW TO DETERMINATE THIS ? [scpmap/jugg.png] ???***
+***START : C:\Program Files (x86)\Steam\steamapps\common\GarrysMod\garrysmod\addons\nzombies_scpmap\materials\scpmap\jugg.png***
+***AND YOU HAVE : scpmap\jugg.png [this is how i found the emplacement of my material]***
+
+SAVE FILE AND RESTART GMOD ! 
+
+
