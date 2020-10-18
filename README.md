@@ -4,7 +4,6 @@ ORIGINAL README.md : https://github.com/Zet0rz/nzombies/blob/master-workshop/REA
 
 THIS README EXTENDS IS A BETA (***IMPROVED AND MORE BEAUTIFUL VERSION TO COME! :)***)
 
-# Dillinger
 # New Features!
 
   - You can add custom "mp3 / wav / png" in depend of the select map !
