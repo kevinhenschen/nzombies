@@ -14,7 +14,7 @@ ENT.TablesBeingCrafted = {} -- Shared between all entities of this type!
 -- models/props_debris/wood_board02a.mdl
 function ENT:Initialize()
 
-	self:SetModel("models/nzprops/table_workbench.mdl")
+	self:SetModel(NZOMBIES_VARS.MODELS.NZPROPS.TABLE_WORKBENCH)
 	self:SetMoveType( MOVETYPE_NONE )
 	self:SetSolid( SOLID_VPHYSICS )
 	if SERVER then

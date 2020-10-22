@@ -17,14 +17,14 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-		self:SetModel( "models/nzprops/zombies_power_lever.mdl" )
+		self:SetModel( NZOMBIES_VARS.MODELS.NZPROPS.ZOMBIES_POWER_LEVER )
 		self:SetSolid( SOLID_VPHYSICS )
 		self:SetMoveType( MOVETYPE_NONE )
 		self:SetUseType( ONOFF_USE )
 		self:SetSwitch(false)
 		
 		self.Handle = ents.Create("nz_prop_effect_attachment")
-		self.Handle:SetModel("models/nzprops/zombies_power_lever_handle.mdl")
+		self.Handle:SetModel(NZOMBIES_VARS.MODELS.NZPROPS.ZOMBIES_POWER_LEVER_HANDLE)
 		self.Handle:SetAngles( self:GetAngles() )
 		self.Handle:SetPos(self:GetPos() + self:GetAngles():Up()*46 + self:GetAngles():Forward()*7)
 		self.Handle:Spawn()

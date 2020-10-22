@@ -51,7 +51,7 @@ function ENT:Initialize()
 	self:SetSolid( SOLID_OBB )
 	self:DrawShadow( false )
 
-	self:SetModel("models/alig96/perks/perkacola/perkacola.mdl")
+	self:SetModel(NZOMBIES_VARS.MODELS.ALIG96.PERKS.PERKACOLA.PERKACOLA)
 	self:RandomizeSkin()
 	local machine = self.WMachine
 

@@ -6,7 +6,7 @@ SWEP.Instructions	= "Fancy Viewmodel Animations"
 SWEP.Spawnable			= false
 SWEP.AdminSpawnable		= false
 
-SWEP.ViewModel			= "models/weapons/c_perk_bottle.mdl"
+SWEP.ViewModel			= NZOMBIES_VARS.MODELS.WEAPONS.C_PERK_BOTTLE
 SWEP.WorldModel			= ""
 
 SWEP.UseHands 			= true

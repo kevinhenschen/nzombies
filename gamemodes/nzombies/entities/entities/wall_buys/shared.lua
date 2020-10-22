@@ -38,7 +38,7 @@ function ENT:Initialize()
 			if wep.DrawWorldModel then self.WorldModelFunc = wep.DrawWorldModel end
 			
 			-- Forced precaching!
-			local model = ClientsideModel("models/hoff/props/teddy_bear/teddy_bear.mdl")
+			local model = ClientsideModel(NZOMBIES_VARS.MODELS.HOFF.PROPS.TEDDY_BEAR.TEDDY_BEAR)
 			util.PrecacheModel(wep.VM or wep.ViewModel)
 			model:SetModel(wep.ViewModel)
 			if wep.VM then model:SetModel(wep.VM) end

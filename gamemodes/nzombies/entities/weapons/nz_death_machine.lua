@@ -28,8 +28,8 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "shotgun"
 
-SWEP.ViewModel = "models/weapons/c_zombies_deathmachine.mdl"
-SWEP.WorldModel = "models/weapons/w_zombies_deathmachine.mdl"
+SWEP.ViewModel = NZOMBIES_VARS.MODELS.WEAPONS.C_ZOMBIES_DEATHMACHINE
+SWEP.WorldModel = NZOMBIES_VARS.MODELS.WEAPONS.W_ZOMBIES_DEATHMACHINE
 SWEP.UseHands = true
 SWEP.vModel = true
 

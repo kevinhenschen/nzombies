@@ -21,6 +21,8 @@ local customconfig = {};
 customconfig['mat'] = "Materials";
 customconfig['lang'] = "Language";
 customconfig['snd'] = "Sound";
+customconfig['mdl'] = "Models";
+customconfig['move'] = "Move";
 
 local defaultconfig = {};
 for k,v in pairs(customconfig) do

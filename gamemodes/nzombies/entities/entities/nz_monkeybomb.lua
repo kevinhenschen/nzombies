@@ -27,7 +27,7 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-		self:SetModel("models/nzprops/monkey_bomb.mdl") -- Change later
+		self:SetModel(NZOMBIES_VARS.MODELS.NZPROPS.MONKEY_BOMB) -- Change later
 		self:PhysicsInitSphere(1, "metal_bouncy")
 		self:SetMoveType(MOVETYPE_VPHYSICS)
 		self:SetCollisionGroup(COLLISION_GROUP_NONE)

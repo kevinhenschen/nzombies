@@ -16,7 +16,7 @@ end
 
 function ENT:Initialize()
 
-	self:SetModel( "models/hoff/props/mysterybox/box.mdl" )
+	self:SetModel( NZOMBIES_VARS.MODELS.HOFF.PROPS.MYSTERYBOX.BOX )
 	self:PhysicsInit( SOLID_VPHYSICS )
 	self:SetMoveType( MOVETYPE_NONE )
 	self:SetSolid( SOLID_VPHYSICS )

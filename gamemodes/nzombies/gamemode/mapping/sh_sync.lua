@@ -34,7 +34,7 @@ if CLIENT then
 		
 		-- Precache all random box weapons in the list
 		if nzMapping.Settings.rboxweps then
-			local model = ClientsideModel("models/hoff/props/teddy_bear/teddy_bear.mdl")
+			local model = ClientsideModel(NZOMBIES_VARS.MODELS.HOFF.PROPS.TEDDY_BEAR.TEDDY_BEAR)
 			for k,v in pairs(nzMapping.Settings.rboxweps) do
 				local wep = weapons.Get(k)
 				if wep and (wep.WM or wep.WorldModel) then

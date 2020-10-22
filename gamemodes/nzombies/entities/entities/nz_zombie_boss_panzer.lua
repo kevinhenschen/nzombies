@@ -5,7 +5,7 @@ ENT.PrintName = "Panzersoldat"
 ENT.Category = "Brainz"
 ENT.Author = "Zet0r"
 
-ENT.Models = { "models/nz_zombie/zombie_panzersoldat.mdl" }
+ENT.Models = { NZOMBIES_VARS.MODELS.NZ_ZOMBIE.ZOMBIE_PANZERSOLDAT }
 
 ENT.AttackRange = 80
 ENT.DamageLow = 90

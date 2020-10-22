@@ -163,7 +163,7 @@ end
 -- Double Points
 nzPowerUps:NewPowerUp("dp", {
 	name = "Double Points",
-	model = "models/nzpowerups/x2.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.X2,
 	global = true, -- Global means it will appear for any player and will refresh its own time if more
 	angle = Angle(25,0,0),
 	scale = 1,
@@ -195,7 +195,7 @@ nzPowerUps:NewPowerUp("maxammo", {
 -- Insta Kill
 nzPowerUps:NewPowerUp("insta", {
 	name = "Insta Kill",
-	model = "models/nzpowerups/insta.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.INSTA,
 	global = true,
 	angle = Angle(0,0,0),
 	scale = 1,
@@ -210,7 +210,7 @@ nzPowerUps:NewPowerUp("insta", {
 -- Nuke
 nzPowerUps:NewPowerUp("nuke", {
 	name = "Nuke",
-	model = "models/nzpowerups/nuke.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.NUKE,
 	global = true,
 	angle = Angle(10,0,0),
 	scale = 1,
@@ -225,7 +225,7 @@ nzPowerUps:NewPowerUp("nuke", {
 -- Fire Sale
 nzPowerUps:NewPowerUp("firesale", {
 	name = "Fire Sale",
-	model = "models/nzpowerups/firesale.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.FIRESALE,
 	global = true,
 	angle = Angle(45,0,0),
 	scale = 0.75,
@@ -255,7 +255,7 @@ nzPowerUps:NewPowerUp("firesale", {
 -- Carpenter
 nzPowerUps:NewPowerUp("carpenter", {
 	name = "Carpenter",
-	model = "models/nzpowerups/carpenter.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.CARPENTER,
 	global = true,
 	angle = Angle(45,0,0),
 	scale = 1,
@@ -271,7 +271,7 @@ nzPowerUps:NewPowerUp("carpenter", {
 -- Zombie Blood
 nzPowerUps:NewPowerUp("zombieblood", {
 	name = "Zombie Blood",
-	model = "models/nzpowerups/zombieblood.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.ZOMBIEBLOOD,
 	global = false, -- Only applies to the player picking it up and time is handled individually per player
 	angle = Angle(0,0,0),
 	scale = 1,
@@ -289,7 +289,7 @@ nzPowerUps:NewPowerUp("zombieblood", {
 -- Death Machine
 nzPowerUps:NewPowerUp("deathmachine", {
 	name = "Death Machine",
-	model = "models/nzpowerups/deathmachine.mdl",
+	model = NZOMBIES_VARS.MODELS.NZPOWERUPS.DEATHMACHINE,
 	global = false, -- Only applies to the player picking it up and time is handled individually per player
 	angle = Angle(0,0,0),
 	scale = 1,

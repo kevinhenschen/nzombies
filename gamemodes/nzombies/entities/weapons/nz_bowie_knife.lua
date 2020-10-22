@@ -28,8 +28,8 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "knife"
 
-SWEP.ViewModel	= "models/weapons/c_bowie_knife.mdl"
-SWEP.WorldModel	= "models/weapons/w_bowie_knife.mdl"
+SWEP.ViewModel	= NZOMBIES_VARS.MODELS.WEAPONS.C_BOWIE_KNIFE
+SWEP.WorldModel	= NZOMBIES_VARS.MODELS.WEAPONS.W_BOWIE_KNIFE
 SWEP.UseHands = true
 SWEP.vModel = true
 

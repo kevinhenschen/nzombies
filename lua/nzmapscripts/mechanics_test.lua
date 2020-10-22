@@ -74,7 +74,7 @@ end)
 shield3:Update()
 
 local buildabletbl = {
-	model = "models/weapons/w_zombieshield.mdl",
+	model = NZOMBIES_VARS.MODELS.WEAPONS.W_ZOMBIESHIELD,
 	pos = Vector(0,0,60), -- (Relative to tables own pos)
 	ang = Angle(0,180,90), -- (Relative too)
 	parts = {

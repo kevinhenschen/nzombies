@@ -17,7 +17,7 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-		self:SetModel("models/nz_zombie/panzer_claw.mdl") -- Change later
+		self:SetModel(NZOMBIES_VARS.MODELS.NZ_ZOMBIE.PANZER_CLAW) -- Change later
 		self:PhysicsInit(SOLID_OBB)
 		self:SetSolid(SOLID_NONE)
 		self:SetTrigger(true)

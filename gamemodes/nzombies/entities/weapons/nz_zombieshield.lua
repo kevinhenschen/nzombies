@@ -28,8 +28,8 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "fist"
 
-SWEP.ViewModel = "models/weapons/c_zombieshield.mdl"
-SWEP.WorldModel = "models/weapons/w_zombieshield_equipped.mdl"
+SWEP.ViewModel = NZOMBIES_VARS.MODELS.WEAPONS.C_ZOMBIESHIELD
+SWEP.WorldModel = NZOMBIES_VARS.MODELS.WEAPONS.W_ZOMBIESHIELD_EQUIPPED
 SWEP.UseHands = true
 SWEP.vModel = true
 

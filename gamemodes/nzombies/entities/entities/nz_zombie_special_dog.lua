@@ -6,7 +6,7 @@ ENT.Category = "Brainz"
 ENT.Author = "Lolle"
 
 --ENT.Models = { "models/boz/killmeplease.mdl" }
-ENT.Models = { "models/nz_zombie/zombie_hellhound.mdl" }
+ENT.Models = { NZOMBIES_VARS.MODELS.NZ_ZOMBIE.ZOMBIE_HELLHOUND }
 
 ENT.AttackRange = 80
 ENT.DamageLow = 20

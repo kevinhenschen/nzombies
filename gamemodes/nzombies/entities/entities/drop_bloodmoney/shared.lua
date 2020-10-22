@@ -16,7 +16,7 @@ end
 
 function ENT:Initialize()
 	
-	self:SetModel("models/nzpowerups/bloodmoney.mdl")
+	self:SetModel(NZOMBIES_VARS.MODELS.NZPOWERUPS.BLOODMONEY)
 	--self:PhysicsInit(SOLID_VPHYSICS)
 	self:PhysicsInitSphere(60, "default_silent")
 	self:SetMoveType(MOVETYPE_NONE)

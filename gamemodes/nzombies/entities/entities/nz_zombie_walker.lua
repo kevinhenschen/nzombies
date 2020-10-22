@@ -10,28 +10,11 @@ function ENT:SetupDataTables()
 	self:NetworkVar("Bool", 1, "Decapitated")
 end
 
-ENT.Models = {
-	"models/nz_zombie/zombie_rerig_animated.mdl",
-}
+ENT.Models = NZOMBIES_VARS.MODELS.NZ_ZOMBIE.ZOMBIE_RERIG_ANIMATED
 
-local AttackSequences = {
-	{seq = "nz_stand_attack1", dmgtimes = {0.75, 1.25}},
-	{seq = "nz_stand_attack2", dmgtimes = {0.3}},
-	{seq = "nz_stand_attack3", dmgtimes = {0.8}},
-	{seq = "nz_stand_attack4", dmgtimes = {0.4, 0.8}},
-}
-local WalkAttackSequences = {
-	{seq = "nz_walk_attack1", dmgtimes = {0.3}},
-	{seq = "nz_walk_attack2", dmgtimes = {0.4, 0.9}},
-	{seq = "nz_walk_attack3", dmgtimes = {0.5}},
-	{seq = "nz_walk_attack4", dmgtimes = {0.4, 0.75}},
-}
-local RunAttackSequences = {
-	{seq = "nz_run_attack1", dmgtimes = {0.3}},
-	{seq = "nz_run_attack2", dmgtimes = {0.3, 0.65}},
-	{seq = "nz_run_attack3", dmgtimes = {0.3, 0.7}},
-	{seq = "nz_run_attack4", dmgtimes = {0.3, 0.8}},
-}
+local AttackSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.AttackSequences
+local WalkAttackSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.WalkAttackSequences
+local RunAttackSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.RunAttackSequences
 
 local AttackSounds = {
 	NZOMBIES_VARS.SOUND.NZ.ZOMBIES.ATTACK.ATTACK_00,
@@ -95,20 +78,12 @@ local RunSounds = {
 	NZOMBIES_VARS.SOUND.NZ.ZOMBIES.SPRINT2.SPRINT8
 }
 
-local JumpSequences = {
-	{seq = "nz_barricade1", speed = 15, time = 2.7},
-	{seq = "nz_barricade2", speed = 15, time = 2.4},
-	{seq = "nz_barricade_fast1", speed = 15, time = 1.8},
-	{seq = "nz_barricade_fast2", speed = 35, time = 4},
-}
-local SprintJumpSequences = {
-	{seq = "nz_barricade_sprint1", speed = 50, time = 1.9},
-	{seq = "nz_barricade_sprint2", speed = 35, time = 1.9},
-}
+local JumpSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.JumpSequences
+local SprintJumpSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.SprintJumpSequences
 
 ENT.ActStages = {
 	[1] = {
-		act = ACT_WALK,
+		act = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.ACT_WALK,
 		minspeed = 5,
 		attackanims = WalkAttackSequences,
 		-- no attackhitsounds, just use ENT.AttackHitSounds for all act stages
@@ -116,21 +91,21 @@ ENT.ActStages = {
 		barricadejumps = JumpSequences,
 	},
 	[2] = {
-		act = ACT_WALK_ANGRY,
+		act = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.ACT_WALK_ANGRY,
 		minspeed = 40,
 		attackanims = WalkAttackSequences,
 		sounds = WalkSounds,
 		barricadejumps = JumpSequences,
 	},
 	[3] = {
-		act = ACT_RUN,
+		act = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.ACT_RUN,
 		minspeed = 100,
 		attackanims = RunAttackSequences,
 		sounds = RunSounds,
 		barricadejumps = SprintJumpSequences,
 	},
 	[4] = {
-		act = ACT_SPRINT,
+		act = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.ACT_SPRINT,
 		minspeed = 160,
 		attackanims = RunAttackSequences,
 		sounds = RunSounds,
@@ -138,22 +113,10 @@ ENT.ActStages = {
 	},
 }
 
-ENT.RedEyes = true
+ENT.RedEyes = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.RED_EYES
 
-ENT.ElectrocutionSequences = {
-	"nz_electrocuted1",
-	"nz_electrocuted2",
-	"nz_electrocuted3",
-	"nz_electrocuted4",
-	"nz_electrocuted5",
-}
-ENT.EmergeSequences = {
-	"nz_emerge1",
-	"nz_emerge2",
-	"nz_emerge3",
-	"nz_emerge4",
-	"nz_emerge5",
-}
+ENT.ElectrocutionSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.ElectrocutionSequences
+ENT.EmergeSequences = NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.EmergeSequences
 ENT.AttackHitSounds = {
 	"npc/zombie/zombie_hit.wav"
 }
@@ -203,7 +166,7 @@ function ENT:SpecialInit()
 	if CLIENT then
 		--make them invisible for a really short duration to blend the emerge sequences
 		self:TimedEvent(0.1, function() -- Tiny delay just to make sure they are fully initialized
-			if string.find(self:GetSequenceName(self:GetSequence()), "nz_emerge") then
+			if string.find(self:GetSequenceName(self:GetSequence()), NZOMBIES_VARS.MOVEMENTS.ZOMBIE_WALKER.EmergeBase) then
 				self:SetNoDraw(true)
 				self:TimedEvent( 0.15, function()
 					self:SetNoDraw(false)

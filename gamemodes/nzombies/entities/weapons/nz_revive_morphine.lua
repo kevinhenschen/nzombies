@@ -28,7 +28,7 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "slam"
 
-SWEP.ViewModel	= "models/weapons/c_revive_morphine.mdl"
+SWEP.ViewModel	= NZOMBIES_VARS.MODELS.WEAPONS.C_REVIVE_MORPHINE
 SWEP.WorldModel	= ""
 SWEP.UseHands = true
 SWEP.vModel = true

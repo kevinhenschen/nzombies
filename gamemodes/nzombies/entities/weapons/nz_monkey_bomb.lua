@@ -28,8 +28,8 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "slam"
 
-SWEP.ViewModel	= "models/weapons/c_monkey_bomb.mdl"
-SWEP.WorldModel	= "models/nzprops/monkey_bomb.mdl"
+SWEP.ViewModel	= NZOMBIES_VARS.MODELS.WEAPONS.C_MONKEY_BOMB
+SWEP.WorldModel	= NZOMBIES_VARS.MODELS.NZPROPS.MONKEY_BOMB
 SWEP.UseHands = true
 SWEP.vModel = true
 

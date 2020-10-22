@@ -28,7 +28,7 @@ SWEP.AdminSpawnable		= false
 
 SWEP.HoldType = "slam"
 
-SWEP.ViewModel	= "models/weapons/c_packapunch_arms.mdl"
+SWEP.ViewModel	= NZOMBIES_VARS.MODELS.WEAPONS.C_PACKAPUNCH_ARMS
 SWEP.WorldModel	= ""
 SWEP.UseHands = true
 SWEP.vModel = true

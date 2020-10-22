@@ -4,7 +4,7 @@ ENT.Type = "anim"
 ENT.Base = "base_entity"
 
 nzLogic:Register("nz_button")
-ENT.SpawnIcon = "models/nzprops/zapper_handle.mdl"
+ENT.SpawnIcon = NZOMBIES_VARS.MODELS.NZPROPS.ZAPPER_HANDLE
 ENT.PrintName = "Button"
 ENT.Description = "Simple Button that can trigger one or multiple other logic entities or traps."
 
@@ -12,9 +12,9 @@ ENT.WireMat = Material( "cable/cable2" )
 
 ENT.ModelTranslate = {
 	-- 1
-	{model = "models/nzprops/zapper_handle.mdl", gmod_button = true}, -- This one is built like gmod buttons to flip
+	{model = NZOMBIES_VARS.MODELS.NZPROPS.ZAPPER_HANDLE, gmod_button = true}, -- This one is built like gmod buttons to flip
 	-- 2
-	{model = "models/nzprops/zombies_power_lever_short.mdl"},
+	{model = NZOMBIES_VARS.MODELS.NZPROPS.ZOMBIES_POWER_LEVER_SHORT},
 	-- 3
 	{model = "models/maxofs2d/button_01.mdl", gmod_button = true},
 	-- 4

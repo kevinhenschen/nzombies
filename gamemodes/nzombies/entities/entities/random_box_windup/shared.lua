@@ -41,7 +41,7 @@ function ENT:Initialize()
 		timer.Simple(5, function()
 			self:SetWinding(false)
 			if self:GetWepClass() == "nz_box_teddy" then
-				self:SetModel("models/hoff/props/teddy_bear/teddy_bear.mdl")
+				self:SetModel(NZOMBIES_VARS.MODELS.HOFF.PROPS.TEDDY_BEAR.TEDDY_BEAR)
 				self:SetAngles( self.Box:GetAngles() + Angle(-90,90,0) )
 				self:SetLocalVelocity(self.Box:GetAngles():Up()*30)
 				nzNotifications:PlaySound(NZOMBIES_VARS.SOUND.NZ.RANDOMBOX.TEDDY_BEAR_LAUGH, 0)

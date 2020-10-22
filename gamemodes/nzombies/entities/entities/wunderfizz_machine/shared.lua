@@ -43,7 +43,7 @@ end
 
 function ENT:Initialize()
 	if SERVER then
-		self:SetModel("models/alig96/perks/wunderfizz/nz_wunderfizz.mdl")
+		self:SetModel(NZOMBIES_VARS.MODELS.ALIG96.PERKS.WUNDERFIZZ.NZ_WUNDERFIZZ)
 		self:SetMoveType( MOVETYPE_NONE )
 		self:SetSolid( SOLID_VPHYSICS )
 		--self:DrawShadow( false )

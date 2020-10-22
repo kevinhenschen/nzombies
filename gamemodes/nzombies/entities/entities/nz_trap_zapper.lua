@@ -3,7 +3,7 @@
 -- Register teh trap
 nzTraps:Register("nz_trap_zapper")
 ENT.PrintName = "Tesla Coil"
-ENT.SpawnIcon = "models/nzprops/zapper_coil.mdl"
+ENT.SpawnIcon = NZOMBIES_VARS.MODELS.NZPROPS.ZAPPER_COIL
 ENT.Description = "Tesla trap that will kill zombies in front of it."
 
 ENT.Type = "anim"
@@ -25,7 +25,7 @@ function ENT:SetupDataTables()
 end
 
 function ENT:Initialize()
-	self:SetModel("models/nzprops/zapper_coil.mdl")
+	self:SetModel(NZOMBIES_VARS.MODELS.NZPROPS.ZAPPER_COIL)
 	self:SetModelScale(1.2)
 	self:PhysicsInit( SOLID_VPHYSICS )
 	self:SetSolid( SOLID_VPHYSICS )

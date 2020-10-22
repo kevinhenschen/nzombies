@@ -13,7 +13,7 @@ ENT.RenderGroup		= RENDERGROUP_BOTH
 
 function ENT:Initialize()
 
-	self:SetModel("models/weapons/w_zombieshield.mdl")
+	self:SetModel(NZOMBIES_VARS.MODELS.WEAPONS.W_ZOMBIESHIELD)
 	if SERVER then
 		self:SetHealth(450) -- 15 hits (30 damage per hit)
 		self:SetMaxHealth(450)
